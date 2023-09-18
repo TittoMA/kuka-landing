@@ -1,0 +1,524 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-weight: 500;
+}
+
+header {
+  background-color: #ffbd59;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  z-index: 2;
+}
+
+header #brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header #brand img {
+  width: 60px;
+}
+
+header #brand h1 a {
+  color: #493036;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+header .btn-menu {
+  display: none;
+}
+
+header nav {
+  font-weight: 600;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+header nav a {
+  color: #5f2929;
+}
+
+header nav a:hover {
+  font-weight: 700;
+}
+
+#blob1 {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#blob1 svg {
+  height: fit-content;
+  width: 60vw;
+  object-fit: cover;
+}
+
+main #hero {
+  margin-top: 48px;
+  margin-bottom: 174px;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+main #hero .headline {
+  flex: 1;
+}
+
+main #hero .headline h1 {
+  color: #5f2929;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 80px;
+  margin-bottom: 16px;
+}
+
+main #hero .headline p {
+  color: #2f1515;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+main #hero .headline a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffbd59;
+  border: none;
+  border-radius: 4px;
+  color: #471f1f;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+main #hero .headline a:hover {
+  background-color: #ff8e75;
+  color: #471f1f;
+}
+
+main #hero .img-container {
+  flex: 1;
+  border-radius: 52px;
+  overflow: hidden;
+}
+
+main #hero .img-container img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+main #about {
+  margin-bottom: 174px;
+  position: relative;
+  padding: 0 80px;
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main #about > div {
+  flex: 1;
+}
+
+main #about h2 {
+  color: #471f1f;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+main #about h1 {
+  color: #763434;
+  line-height: 125%;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+main #about p {
+  color: #2f1515;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+main #about img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+}
+
+#blob2 {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  z-index: -1;
+}
+
+#blob2 svg {
+  height: fit-content;
+  width: 30vw;
+  object-fit: cover;
+}
+
+main #feature {
+  margin-bottom: 174px;
+  padding: 52px 80px;
+  background-color: #ffdeac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+
+main #feature > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main #feature > h1 {
+  text-align: end;
+  color: #5f2929;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 127.5%;
+}
+
+main #feature .feature-card {
+  max-width: 600px;
+  background-color: #ffbd59;
+  border-radius: 8px;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: #2f1515;
+}
+
+main #feature .feature-card > svg {
+  width: 50px;
+  height: fit-content;
+  flex-shrink: 0;
+}
+
+main #product {
+  position: relative;
+  padding: 0 80px;
+  margin-bottom: 174px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+main #product h1 {
+  color: #5f2929;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+main #product p {
+  color: #5f2929;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main #product .container {
+  display: flex;
+  gap: 40px;
+}
+
+main #product .container > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+main #product .container > div img {
+  border-radius: 20px;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+main #product .container > div h3 {
+  color: #5f2929;
+}
+
+main #product .btn-order {
+  color: #471f1f;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffbd59;
+  transition: all 0.3s;
+}
+
+main #product .btn-order:hover {
+  background-color: #ff8e75;
+}
+
+main #product .btn-order svg {
+  height: 36px;
+  width: fit-content;
+}
+
+#blob3 {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  z-index: -1;
+}
+
+#blob3 svg {
+  height: fit-content;
+  width: 30vw;
+  object-fit: cover;
+}
+
+main #contact {
+  padding: 0 80px;
+  margin-bottom: 174px;
+}
+
+main #contact > h1 {
+  color: #5f2929;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+main #contact .contact-content {
+  background-color: #ff7759;
+  border-radius: 12px;
+  padding: 52px 60px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main #contact .text {
+  max-width: 600px;
+  color: #ffe4de;
+}
+
+main #contact .text h1 {
+  margin-bottom: 20px;
+}
+
+main #contact .text p {
+  font-weight: 600;
+}
+
+main #contact .btn-contact {
+  background: #ffdeac;
+  border-radius: 4px;
+  color: #471f1f;
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+main #contact .btn-contact:hover {
+  background-color: #ffbd59;
+}
+
+main #location {
+  padding: 0 80px;
+  margin-bottom: 174px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+main #location .location-content {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+main #location .location-content > div {
+  color: #2f1515;
+  display: flex;
+  gap: 20px;
+}
+
+main #location .location-content > div > svg {
+  width: 40px;
+  height: 40px;
+}
+
+main #location .map {
+  flex: 2;
+}
+
+#blob4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#blob4 svg {
+  height: fit-content;
+  width: 30vw;
+  object-fit: cover;
+}
+
+footer .footer-content {
+  padding: 40px 80px;
+  background-color: #ffbd59;
+  display: flex;
+  gap: 40px;
+}
+
+.footer-content .brand {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content .brand > img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.footer-content .brand > p {
+  color: #471f1f;
+  font-size: 15px;
+  text-align: center;
+}
+
+footer .menu-wrapper {
+  flex: 1.7;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-menu h4 {
+  color: #5f2929;
+}
+
+.footer-menu a {
+  font-weight: 500;
+}
+
+.footer-menu a,
+.footer-menu h5,
+.footer-menu p {
+  color: #1e1e1e;
+  font-size: 14px;
+}
+
+.footer-menu a:hover {
+  font-weight: 700;
+}
+
+footer .copyright {
+  background-color: #ffdeac;
+  color: #763434;
+  padding: 20px 80px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    position: relative;
+    padding: 20px 10%;
+  }
+  header .responsive-wrapper {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .btn-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+
+  header .btn-menu > svg {
+    color: #471f1f;
+  }
+
+  header nav {
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffbd59;
+    padding: 0 10%;
+    position: absolute;
+    flex-direction: column;
+    align-items: start;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+  }
+
+  header nav.show {
+    padding: 0 10% 20px;
+    max-height: 300px;
+  }
+}
