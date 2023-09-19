@@ -1,3 +1,32 @@
+@media screen and (max-width: 600px) {
+  main #feature .feature-card h3 {
+    font-size: 16px;
+  }
+
+  main #feature .feature-card p {
+    font-size: 14px;
+  }
+
+  main #product .container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  #blob3 {
+    top: 0;
+  }
+
+  #blob3 svg {
+    width: 50vw;
+  }
+
+  main #contact .contact-content {
+    padding: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   header {
     padding: 16px 10%;
@@ -108,6 +137,45 @@
 
   main #feature > h1 > br {
     display: none;
+  }
+
+  main #feature .feature-card {
+    max-width: 100%;
+    gap: 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main #feature .feature-card > svg {
+    width: 40px;
+  }
+
+  main #product {
+    padding: 0 10%;
+    margin-bottom: 120px;
+    gap: 36px;
+  }
+
+  main #product .container {
+    width: 100%;
+    gap: 32px;
+  }
+
+  main #product .container > div img {
+    height: 200px;
+  }
+
+  main #product .btn-order {
+    font-size: 14px;
+  }
+
+  main #product .btn-order svg {
+    height: 30px;
+  }
+
+  main #contact {
+    padding: 0 10%;
+    margin-bottom: 120px;
   }
 }
 
