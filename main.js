@@ -1,12 +1,3 @@
-$(document).ready(function () {
-  $('header')
-    .find('.btn-menu')
-    .click(function () {
-      $('header').find('nav').toggleClass('show');
-      changeIcon();
-    });
-});
-
 function changeIcon() {
   if ($('header').find('nav').hasClass('show')) {
     $('header').find('.btn-menu').html(`
@@ -22,3 +13,38 @@ function changeIcon() {
     `);
   }
 }
+
+function checkVisible() {
+  let scrollPos = $(window).scrollTop();
+  let windowHeight = window.innerHeight;
+
+  $('.scroll-animate').each(function () {
+    let offsetTop = $(this).offset().top;
+    let elementHeight = $(this).outerHeight();
+    const offset = elementHeight * 0.1;
+
+    let visiblePercent = ((windowHeight - (offsetTop - scrollPos + offset)) / elementHeight) * 100;
+    visiblePercent = Math.min(100, Math.max(0, visiblePercent));
+
+    console.log('off', offset);
+    console.log('elheight', elementHeight);
+    $(this).css({
+      opacity: visiblePercent / 100,
+      transform: 'translateY(' + 40 * (1 - visiblePercent / 100) + 'px)',
+    });
+  });
+}
+
+$(document).ready(function () {
+  $('header')
+    .find('.btn-menu')
+    .click(function () {
+      $('header').find('nav').toggleClass('show');
+      changeIcon();
+    });
+
+  checkVisible();
+  $(window).scroll(function () {
+    checkVisible();
+  });
+});

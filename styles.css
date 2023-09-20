@@ -491,3 +491,9 @@ footer .copyright {
   font-weight: 600;
   text-align: center;
 }
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
