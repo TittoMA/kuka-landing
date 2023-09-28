@@ -331,11 +331,23 @@ p {
   align-items: center;
   gap: 40px;
   color: $secondary-color-90;
+  transition: all 0.3s;
 
   & > svg {
     width: 50px;
     height: fit-content;
     flex-shrink: 0;
+  }
+
+  &:hover {
+    background-color: $tertiary-color-60;
+    scale: 1.1;
+    color: $secondary-color-100;
+    cursor: pointer;
+
+    h3 {
+      color: $secondary-color-100;
+    }
   }
 }
 

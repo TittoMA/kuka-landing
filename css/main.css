@@ -320,12 +320,22 @@ p {
   align-items: center;
   gap: 40px;
   color: #471f1f;
+  transition: all 0.3s;
 }
 .feature__card > svg {
   width: 50px;
   height: -moz-fit-content;
   height: fit-content;
   flex-shrink: 0;
+}
+.feature__card:hover {
+  background-color: #ff7759;
+  scale: 1.1;
+  color: #1c0c0c;
+  cursor: pointer;
+}
+.feature__card:hover h3 {
+  color: #1c0c0c;
 }
 
 .feature__headline {
