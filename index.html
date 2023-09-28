@@ -14,19 +14,20 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="responsive.css" /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Kuka Kukis</title>
   </head>
   <body>
-    <header>
-      <div class="responsive-wrapper">
-        <div id="brand">
+    <div class="progress-bar"></div>
+    <header class="header">
+      <div class="header__responsive-wrapper">
+        <div id="brand" class="header__brand">
           <img src="./assets/logo.png" alt="Logo" />
           <h1><a href="/">Kuka Kukis</a></h1>
         </div>
-        <button class="btn-menu">
+        <button class="header__btn-menu">
           <svg
             fill="none"
             stroke="currentColor"
@@ -48,11 +49,12 @@
         <a href="/">Home</a>
         <a href="#about">About</a>
         <a href="#product">Product</a>
+        <a href="#faq">F.A.Q</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
     <main>
-      <div id="blob1">
+      <div class="blob-shape blob1">
         <svg xmlns="http://www.w3.org/2000/svg" width="891" height="902" viewBox="0 0 891 902" fill="none">
           <path
             fill-rule="evenodd"
@@ -63,8 +65,8 @@
         </svg>
       </div>
 
-      <div id="hero">
-        <div class="headline scroll-animate">
+      <div class="hero container">
+        <div class="hero__headline scroll-animate">
           <h1>
             Discover Our <span style="background-color: #ff8e75; border-radius: 10px">Heavenly</span> Cookies
           </h1>
@@ -83,14 +85,14 @@
           >
         </div>
 
-        <div class="img-container scroll-animate">
+        <div class="hero__img-container scroll-animate">
           <img src="./assets/kastengel1.jpg" alt="Hero Image" />
         </div>
       </div>
 
-      <div id="about">
+      <div id="about" class="about container">
         <h2>About us</h2>
-        <div class="about-content">
+        <div class="about__content">
           <div>
             <h1 class="scroll-animate">We are passionate creators of Tasteful cookies</h1>
             <p>
@@ -113,7 +115,7 @@
             <img src="./assets/hello.png" alt="Waving Illustration" />
           </div>
         </div>
-        <div id="blob2">
+        <div class="blob-shape blob2">
           <svg xmlns="http://www.w3.org/2000/svg" width="465" height="632" viewBox="0 0 465 632" fill="none">
             <path
               fill-rule="evenodd"
@@ -125,9 +127,9 @@
         </div>
       </div>
 
-      <div id="feature">
-        <div>
-          <div class="feature-card scroll-animate">
+      <div class="feature container">
+        <div class="feature__card-list">
+          <div class="feature__card scroll-animate">
             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81" fill="none">
               <path
                 d="M40 0.5C43.225 0.5 46.3635 0.8821 49.3725 1.60465C50.2585 1.81745 50.9585 2.4954 51.1995 3.37415C51.4405 4.2529 51.1845 5.1932 50.531 5.8283C48.6585 7.64825 47.5 10.1867 47.5 13C47.5 17.7661 50.837 21.7588 55.304 22.7586C56.582 23.0447 57.5 24.18 57.5 25.5C57.5 31.0229 61.977 35.5 67.5 35.5C70.4945 35.5 73.179 34.187 75.0155 32.097C75.6485 31.3766 76.6375 31.0817 77.5615 31.338C78.4855 31.5942 79.1815 32.3564 79.3535 33.2998C79.7785 35.6373 80 38.0438 80 40.5C80 62.5915 62.0915 80.5 40 80.5C17.9086 80.5 0 62.5915 0 40.5C0 18.4086 17.9086 0.5 40 0.5ZM50 55.5C47.2385 55.5 45 57.7385 45 60.5C45 63.2615 47.2385 65.5 50 65.5C52.7615 65.5 55 63.2615 55 60.5C55 57.7385 52.7615 55.5 50 55.5ZM25 50.5C22.2386 50.5 20 52.7385 20 55.5C20 58.2615 22.2386 60.5 25 60.5C27.7614 60.5 30 58.2615 30 55.5C30 52.7385 27.7614 50.5 25 50.5ZM40 35.5C37.2386 35.5 35 37.7386 35 40.5C35 43.2615 37.2386 45.5 40 45.5C42.7615 45.5 45 43.2615 45 40.5C45 37.7386 42.7615 35.5 40 35.5ZM20 25.5C17.2386 25.5 15 27.7386 15 30.5C15 33.2614 17.2386 35.5 20 35.5C22.7614 35.5 25 33.2614 25 30.5C25 27.7386 22.7614 25.5 20 25.5Z"
@@ -140,7 +142,7 @@
             </div>
           </div>
 
-          <div class="feature-card scroll-animate">
+          <div class="feature__card scroll-animate">
             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="87" viewBox="0 0 80 87" fill="none">
               <path
                 d="M29.2309 21.932H36.9232V14.2397C36.9232 12.7183 36.4721 11.2311 35.6268 9.96606C34.7816 8.70106 33.5802 7.71512 32.1746 7.13291C30.769 6.5507 29.2224 6.39836 27.7302 6.69517C26.238 6.99198 24.8674 7.7246 23.7916 8.80039C22.7158 9.87618 21.9832 11.2468 21.6864 12.739C21.3896 14.2311 21.5419 15.7778 22.1241 17.1834C22.7063 18.589 23.6923 19.7904 24.9573 20.6356C26.2223 21.4808 27.7095 21.932 29.2309 21.932Z"
@@ -172,7 +174,7 @@
             </div>
           </div>
 
-          <div class="feature-card scroll-animate">
+          <div class="feature__card scroll-animate">
             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81" fill="none">
               <path
                 d="M40 0.5C17.8667 0.5 0 18.3667 0 40.5C0 62.6333 17.8667 80.5 40 80.5C62.1333 80.5 80 62.6333 80 40.5C80 18.3667 62.1333 0.5 40 0.5ZM40 64.5C38.1333 62.1 12.6667 47.3 17.8667 30.9C22.5333 16.1 38 22.1 40 30.1C41.4667 22.6333 57.2 15.8333 62.1333 30.9C67.3333 47.0333 41.8667 62.6333 40 64.5Z"
@@ -186,19 +188,19 @@
           </div>
         </div>
 
-        <h1>
+        <h1 class="feature__headline">
           Why <br />
           Choose <br /><span style="background-color: #ff8e75; border-radius: 10px">Us?</span>
         </h1>
       </div>
 
-      <div id="product">
+      <div id="product" class="product container">
         <div style="text-align: center">
           <h1>Our <b>Top Products</b></h1>
           <p>Beberapa produk pilihan kami yang terlaris</p>
         </div>
 
-        <div class="container">
+        <div class="product__container">
           <div class="scroll-animate">
             <img src="./assets/kastengel1.jpg" alt="" />
             <h3>Kastengel</h3>
@@ -213,7 +215,7 @@
           </div>
         </div>
 
-        <a class="btn-order scroll-animate" href="#"
+        <a class="product__btn-order scroll-animate" href="#"
           ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
             <path
               d="M40.7268 0H7.27333C3.31422 0 0.104736 3.20949 0.104736 7.16859V40.622C0.104736 44.5811 3.31422 47.7906 7.27333 47.7906H40.7268C44.6859 47.7906 47.8954 44.5811 47.8954 40.622V7.16859C47.8954 3.20949 44.6859 0 40.7268 0Z"
@@ -232,7 +234,7 @@
           >Beli Sekarang Via Whatsapp</a
         >
 
-        <div id="blob3">
+        <div class="blob-shape blob3">
           <svg xmlns="http://www.w3.org/2000/svg" width="347" height="579" viewBox="0 0 347 579" fill="none">
             <path
               fill-rule="evenodd"
@@ -244,11 +246,219 @@
         </div>
       </div>
 
-      <div id="contact">
+      <div id="faq" class="faq container">
+        <div class="faq__headline">
+          <h1>F.A.Q</h1>
+          <p>Frequently Asked Questions</p>
+        </div>
+        <div class="faq__content">
+          <div class="faq__accordion">
+            <div class="faq__accordion-toggle">
+              <h3>Bagaimana caranya?</h3>
+              <button class="faq__accordion-toggle-btn">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="faq__accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum perspiciatis quia
+                illum soluta laborum, velit delectus ea accusamus tenetur aliquid vitae, ratione animi a
+                expedita. Tempore voluptatem numquam eum, iure cum ut, dolorum nesciunt esse et hic explicabo
+                rerum.
+              </p>
+            </div>
+          </div>
+          <div class="faq__accordion">
+            <div class="faq__accordion-toggle">
+              <h3>Bagaimana caranya?</h3>
+              <button class="faq__accordion-toggle-btn">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="faq__accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum perspiciatis quia
+                illum soluta laborum, velit delectus ea accusamus tenetur aliquid vitae, ratione animi a
+                expedita. Tempore voluptatem numquam eum, iure cum ut, dolorum nesciunt esse et hic explicabo
+                rerum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimony container">
+        <div class="testimony__headline">
+          <h1>Hear It From Our Happy Cookie Lovers.</h1>
+        </div>
+
+        <div class="testimony__card-list">
+          <div class="testimony__card">
+            <svg
+              class="testimony__avatar"
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+            >
+              <path
+                d="M60 30C60 46.5686 46.5686 60 30 60C13.4314 60 0 46.5686 0 30C0 13.4314 13.4314 0 30 0C46.5686 0 60 13.4314 60 30Z"
+                fill="#1575E5"
+              />
+              <path
+                d="M10.5 30C10.5 19.2305 19.2305 10.5 30 10.5C40.7696 10.5 49.5 19.2305 49.5 30V43.2273C49.5 44.2063 48.7064 45 47.7273 45C45.5274 45 43.421 44.5992 41.4773 43.8669C40.1918 44.932 38.7557 45.8219 37.2057 46.4997C41.1636 48.2304 44.379 51.3434 46.2416 55.2284C41.5607 58.2477 35.9856 60 30.0012 60C24.0166 60 18.4416 58.2477 13.7607 55.2284C15.6231 51.3437 18.8381 48.231 22.7955 46.5003C21.2451 45.8223 19.8085 44.9323 18.5227 43.8669C16.579 44.5992 14.4726 45 12.2727 45C11.2936 45 10.5 44.2063 10.5 43.2273V30Z"
+                fill="#A6CFFF"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M25.5 34.5C26.3284 34.5 27 35.1716 27 36C27 37.6569 28.3431 39 30 39C31.6569 39 33 37.6569 33 36C33 35.1716 33.6716 34.5 34.5 34.5C35.3284 34.5 36 35.1716 36 36C36 39.3137 33.3137 42 30 42C26.6863 42 24 39.3137 24 36C24 35.1716 24.6716 34.5 25.5 34.5Z"
+                fill="#1575E5"
+              />
+              <path
+                d="M24 26.25C24 27.4926 22.9926 28.5 21.75 28.5C20.5074 28.5 19.5 27.4926 19.5 26.25C19.5 25.0074 20.5074 24 21.75 24C22.9926 24 24 25.0074 24 26.25Z"
+                fill="#1575E5"
+              />
+              <path
+                d="M40.5 26.25C40.5 27.4926 39.4926 28.5 38.25 28.5C37.0074 28.5 36 27.4926 36 26.25C36 25.0074 37.0074 24 38.25 24C39.4926 24 40.5 25.0074 40.5 26.25Z"
+                fill="#1575E5"
+              />
+            </svg>
+            <div class="testimony__content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26" fill="none">
+                <path
+                  d="M13.8462 15V21.9231C13.8462 23.8341 12.2957 25.3846 10.3846 25.3846H3.46154C1.55048 25.3846 0 23.8341 0 21.9231V9.23077C0 4.14664 4.14663 0 9.23077 0H10.3846C11.0156 0 11.5385 0.522837 11.5385 1.15385V3.46154C11.5385 4.09255 11.0156 4.61539 10.3846 4.61539H9.23077C6.6887 4.61539 4.61538 6.6887 4.61538 9.23077V9.80769C4.61538 10.7632 5.39062 11.5385 6.34615 11.5385H10.3846C12.2957 11.5385 13.8462 13.0889 13.8462 15ZM30 15V21.9231C30 23.8341 28.4495 25.3846 26.5385 25.3846H19.6154C17.7043 25.3846 16.1538 23.8341 16.1538 21.9231V9.23077C16.1538 4.14664 20.3005 0 25.3846 0H26.5385C27.1695 0 27.6923 0.522837 27.6923 1.15385V3.46154C27.6923 4.09255 27.1695 4.61539 26.5385 4.61539H25.3846C22.8425 4.61539 20.7692 6.6887 20.7692 9.23077V9.80769C20.7692 10.7632 21.5445 11.5385 22.5 11.5385H26.5385C28.4495 11.5385 30 13.0889 30 15Z"
+                  fill="#FF7759"
+                />
+              </svg>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio maxime excepturi
+                dolorum facere assumenda dolores ad saepe consequuntur quidem.
+              </p>
+              <h3>- Nisa Silema</h3>
+            </div>
+          </div>
+
+          <div class="testimony__card">
+            <svg
+              class="testimony__avatar"
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+            >
+              <path
+                d="M60 30C60 46.5686 46.5686 60 30 60C13.4314 60 0 46.5686 0 30C0 13.4314 13.4314 0 30 0C46.5686 0 60 13.4314 60 30Z"
+                fill="#1575E5"
+              />
+              <path
+                d="M10.5 30C10.5 19.2305 19.2305 10.5 30 10.5C40.7696 10.5 49.5 19.2305 49.5 30V43.2273C49.5 44.2063 48.7064 45 47.7273 45C45.5274 45 43.421 44.5992 41.4773 43.8669C40.1918 44.932 38.7557 45.8219 37.2057 46.4997C41.1636 48.2304 44.379 51.3434 46.2416 55.2284C41.5607 58.2477 35.9856 60 30.0012 60C24.0166 60 18.4416 58.2477 13.7607 55.2284C15.6231 51.3437 18.8381 48.231 22.7955 46.5003C21.2451 45.8223 19.8085 44.9323 18.5227 43.8669C16.579 44.5992 14.4726 45 12.2727 45C11.2936 45 10.5 44.2063 10.5 43.2273V30Z"
+                fill="#A6CFFF"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M25.5 34.5C26.3284 34.5 27 35.1716 27 36C27 37.6569 28.3431 39 30 39C31.6569 39 33 37.6569 33 36C33 35.1716 33.6716 34.5 34.5 34.5C35.3284 34.5 36 35.1716 36 36C36 39.3137 33.3137 42 30 42C26.6863 42 24 39.3137 24 36C24 35.1716 24.6716 34.5 25.5 34.5Z"
+                fill="#1575E5"
+              />
+              <path
+                d="M24 26.25C24 27.4926 22.9926 28.5 21.75 28.5C20.5074 28.5 19.5 27.4926 19.5 26.25C19.5 25.0074 20.5074 24 21.75 24C22.9926 24 24 25.0074 24 26.25Z"
+                fill="#1575E5"
+              />
+              <path
+                d="M40.5 26.25C40.5 27.4926 39.4926 28.5 38.25 28.5C37.0074 28.5 36 27.4926 36 26.25C36 25.0074 37.0074 24 38.25 24C39.4926 24 40.5 25.0074 40.5 26.25Z"
+                fill="#1575E5"
+              />
+            </svg>
+            <div class="testimony__content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26" fill="none">
+                <path
+                  d="M13.8462 15V21.9231C13.8462 23.8341 12.2957 25.3846 10.3846 25.3846H3.46154C1.55048 25.3846 0 23.8341 0 21.9231V9.23077C0 4.14664 4.14663 0 9.23077 0H10.3846C11.0156 0 11.5385 0.522837 11.5385 1.15385V3.46154C11.5385 4.09255 11.0156 4.61539 10.3846 4.61539H9.23077C6.6887 4.61539 4.61538 6.6887 4.61538 9.23077V9.80769C4.61538 10.7632 5.39062 11.5385 6.34615 11.5385H10.3846C12.2957 11.5385 13.8462 13.0889 13.8462 15ZM30 15V21.9231C30 23.8341 28.4495 25.3846 26.5385 25.3846H19.6154C17.7043 25.3846 16.1538 23.8341 16.1538 21.9231V9.23077C16.1538 4.14664 20.3005 0 25.3846 0H26.5385C27.1695 0 27.6923 0.522837 27.6923 1.15385V3.46154C27.6923 4.09255 27.1695 4.61539 26.5385 4.61539H25.3846C22.8425 4.61539 20.7692 6.6887 20.7692 9.23077V9.80769C20.7692 10.7632 21.5445 11.5385 22.5 11.5385H26.5385C28.4495 11.5385 30 13.0889 30 15Z"
+                  fill="#FF7759"
+                />
+              </svg>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio maxime excepturi
+                dolorum facere assumenda dolores ad saepe consequuntur quidem.
+              </p>
+              <h3>- Nisa Silema</h3>
+            </div>
+          </div>
+
+          <div class="testimony__card">
+            <svg
+              class="testimony__avatar"
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+            >
+              <path
+                d="M60 30C60 46.5686 46.5686 60 30 60C13.4314 60 0 46.5686 0 30C0 13.4314 13.4314 0 30 0C46.5686 0 60 13.4314 60 30Z"
+                fill="#1575E5"
+              />
+              <path
+                d="M10.5 30C10.5 19.2305 19.2305 10.5 30 10.5C40.7696 10.5 49.5 19.2305 49.5 30V43.2273C49.5 44.2063 48.7064 45 47.7273 45C45.5274 45 43.421 44.5992 41.4773 43.8669C40.1918 44.932 38.7557 45.8219 37.2057 46.4997C41.1636 48.2304 44.379 51.3434 46.2416 55.2284C41.5607 58.2477 35.9856 60 30.0012 60C24.0166 60 18.4416 58.2477 13.7607 55.2284C15.6231 51.3437 18.8381 48.231 22.7955 46.5003C21.2451 45.8223 19.8085 44.9323 18.5227 43.8669C16.579 44.5992 14.4726 45 12.2727 45C11.2936 45 10.5 44.2063 10.5 43.2273V30Z"
+                fill="#A6CFFF"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M25.5 34.5C26.3284 34.5 27 35.1716 27 36C27 37.6569 28.3431 39 30 39C31.6569 39 33 37.6569 33 36C33 35.1716 33.6716 34.5 34.5 34.5C35.3284 34.5 36 35.1716 36 36C36 39.3137 33.3137 42 30 42C26.6863 42 24 39.3137 24 36C24 35.1716 24.6716 34.5 25.5 34.5Z"
+                fill="#1575E5"
+              />
+              <path
+                d="M24 26.25C24 27.4926 22.9926 28.5 21.75 28.5C20.5074 28.5 19.5 27.4926 19.5 26.25C19.5 25.0074 20.5074 24 21.75 24C22.9926 24 24 25.0074 24 26.25Z"
+                fill="#1575E5"
+              />
+              <path
+                d="M40.5 26.25C40.5 27.4926 39.4926 28.5 38.25 28.5C37.0074 28.5 36 27.4926 36 26.25C36 25.0074 37.0074 24 38.25 24C39.4926 24 40.5 25.0074 40.5 26.25Z"
+                fill="#1575E5"
+              />
+            </svg>
+            <div class="testimony__content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26" fill="none">
+                <path
+                  d="M13.8462 15V21.9231C13.8462 23.8341 12.2957 25.3846 10.3846 25.3846H3.46154C1.55048 25.3846 0 23.8341 0 21.9231V9.23077C0 4.14664 4.14663 0 9.23077 0H10.3846C11.0156 0 11.5385 0.522837 11.5385 1.15385V3.46154C11.5385 4.09255 11.0156 4.61539 10.3846 4.61539H9.23077C6.6887 4.61539 4.61538 6.6887 4.61538 9.23077V9.80769C4.61538 10.7632 5.39062 11.5385 6.34615 11.5385H10.3846C12.2957 11.5385 13.8462 13.0889 13.8462 15ZM30 15V21.9231C30 23.8341 28.4495 25.3846 26.5385 25.3846H19.6154C17.7043 25.3846 16.1538 23.8341 16.1538 21.9231V9.23077C16.1538 4.14664 20.3005 0 25.3846 0H26.5385C27.1695 0 27.6923 0.522837 27.6923 1.15385V3.46154C27.6923 4.09255 27.1695 4.61539 26.5385 4.61539H25.3846C22.8425 4.61539 20.7692 6.6887 20.7692 9.23077V9.80769C20.7692 10.7632 21.5445 11.5385 22.5 11.5385H26.5385C28.4495 11.5385 30 13.0889 30 15Z"
+                  fill="#FF7759"
+                />
+              </svg>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio maxime excepturi
+                dolorum facere assumenda dolores ad saepe consequuntur quidem.
+              </p>
+              <h3>- Nisa Silema</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="contact container">
         <h1>Contact Us</h1>
 
-        <div class="contact-content scroll-animate">
-          <div class="text">
+        <div class="contact__content scroll-animate">
+          <div class="contact__description">
             <h1>Tim Kami Selalu Siap!</h1>
             <p>
               Hubungi kami kapan saja untuk pertanyaan, pesanan khusus, atau hanya sekadar ingin berbicara
@@ -256,12 +466,12 @@
             </p>
           </div>
 
-          <a href="#" class="btn-contact">Hubungi Kami</a>
+          <a href="#" class="contact__btn-contact">Hubungi Kami</a>
         </div>
       </div>
 
-      <div id="location">
-        <div class="location-content">
+      <div class="location container">
+        <div class="location__content">
           <h1 style="color: #5f2929">Our Location</h1>
           <div class="scroll-animate">
             <svg
@@ -304,7 +514,7 @@
           </div>
         </div>
 
-        <div class="map">
+        <div class="location__map">
           <div style="width: 100%">
             <iframe
               class="scroll-animate"
@@ -320,7 +530,7 @@
           </div>
         </div>
 
-        <div id="blob4">
+        <div class="blob-shape blob4">
           <svg xmlns="http://www.w3.org/2000/svg" width="523" height="635" viewBox="0 0 523 635" fill="none">
             <path
               fill-rule="evenodd"
@@ -333,9 +543,9 @@
       </div>
     </main>
 
-    <footer>
-      <div class="footer-content">
-        <div class="brand">
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__brand">
           <img src="./assets/logotext.png" alt="Logo" />
           <p>
             Kami adalah tim yang berdedikasi dalam menciptakan berbagai variasi kue yang lezat, menarik, dan
@@ -343,19 +553,19 @@
           </p>
         </div>
 
-        <div class="menu-wrapper">
-          <div class="footer-menu">
+        <div class="footer__menu-wrapper">
+          <div class="footer__menu">
             <h4>Location</h4>
             <p>Pasar Limpung, Kecamatan Limpung, Kabupaten Batang, Jawa Tengah, Indonesia</p>
           </div>
-          <div class="footer-menu">
+          <div class="footer__menu">
             <h4>Contact</h4>
             <div>
               <h5 style="margin-bottom: 6px">Whatsapp</h5>
               <p>+62 8123-4567-789</p>
             </div>
           </div>
-          <div class="footer-menu">
+          <div class="footer__menu">
             <h4>Quick Links</h4>
             <a href="/">Home</a>
             <a href="#about">About</a>
@@ -364,7 +574,7 @@
         </div>
       </div>
 
-      <div class="copyright">©2023 Reserved by Titto Mahogany | Powered By Gamelab.id</div>
+      <div class="footer__copyright">©2023 Reserved by Titto Mahogany | Powered By Gamelab.id</div>
     </footer>
 
     <script src="./main.js"></script>

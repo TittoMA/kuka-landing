@@ -12,6 +12,29 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #fff2de;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #ef6243;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  animation: progress-bar;
+  animation-timeline: scroll();
+  transform-origin: 0%;
+}
+
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 a {
@@ -288,6 +311,11 @@ main #product .container > div img {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  transition: scale 0.7s;
+}
+
+main #product .container > div img:hover {
+  scale: 1.2;
 }
 
 main #product .container > div h3 {
@@ -332,6 +360,104 @@ main #product .btn-order svg {
 main #contact {
   padding: 0 80px;
   margin-bottom: 174px;
+}
+
+main #faq {
+  padding: 0 80px;
+  margin-bottom: 174px;
+}
+
+main #testimony {
+  padding: 0 80px;
+  margin-bottom: 174px;
+}
+
+main #faq > h1,
+main #testimony h1 {
+  color: #5f2929;
+  margin-bottom: 32px;
+}
+
+.faq {
+  display: flex;
+  gap: 40px;
+}
+
+.faq__headline {
+  flex: 0.2;
+}
+
+.faq__headline h1 {
+  font-size: 60px;
+}
+
+.faq__content {
+  flex: 0.8;
+}
+
+.faq__accordion {
+  background-color: #fff;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.faq__accordion-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq__accordion-toggle > svg {
+  width: 24px;
+  height: fit-content;
+}
+
+.faq__accordion-content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* .testimony {
+  display: flex;
+  align-items: center;
+} */
+
+.testimony__headline {
+  flex: 0.55;
+}
+
+.testimony__card-list {
+  flex: 0.45;
+  display: flex;
+  gap: 20px;
+}
+
+.testimony__card {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimony__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.testimony__content p {
+  text-align: justify;
+}
+
+.testimony__avatar {
+  flex-shrink: 0;
+  width: 80px;
+  height: fit-content;
 }
 
 main #contact > h1 {
