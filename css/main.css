@@ -66,6 +66,9 @@ h6 {
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: none;
+}
 
 p {
   font-weight: 500;
@@ -387,7 +390,7 @@ p {
   transition: scale 0.7s;
 }
 .product__container > div img:hover {
-  scale: 1.2;
+  scale: 1.1;
 }
 .product__container > div h3 {
   color: #5f2929;

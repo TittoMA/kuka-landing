@@ -43,6 +43,7 @@ body {
   background-color: $primary-color-10;
 }
 
+// TYPOGRAPHY
 h1 {
   @include heading-text(2em);
 }
@@ -61,15 +62,18 @@ h5 {
 h6 {
   @include heading-text(0.67em);
 }
-
 a {
   text-decoration: none;
-}
 
+  &:hover{
+    text-decoration: none;
+  }
+}
 p {
   font-weight: 500;
 }
 
+// BLOB
 .blob-shape {
   z-index: -1;
   position: absolute;
@@ -151,7 +155,7 @@ p {
   transform-origin: 0%;
 }
 
-// Header
+// HEADER
 .header {
   @include flex-box($justify-content: space-between);
   background-color: $primary-color-60;
@@ -200,6 +204,7 @@ p {
   display: none;
 }
 
+// HERO
 .hero {
   margin-top: 48px;
   display: flex;
@@ -263,6 +268,7 @@ p {
   }
 }
 
+// ABOUT
 .about {
   position: relative;
   padding-top: 174px;
@@ -307,6 +313,7 @@ p {
   }
 }
 
+// FEATURE
 .feature {
   padding: 52px 80px;
   background-color: $primary-color-30;
@@ -358,6 +365,7 @@ p {
   line-height: 127.5%;
 }
 
+// PRODUCT
 .product {
   position: relative;
   padding-top: 174px;
@@ -401,7 +409,7 @@ p {
     }
 
     img:hover {
-      scale: 1.2;
+      scale: 1.1;
     }
 
     h3 {
@@ -432,6 +440,7 @@ p {
   }
 }
 
+// FAQ
 .faq {
   padding-top: 174px;
   margin-bottom: 174px;
@@ -490,6 +499,7 @@ p {
   max-height: 200px;
 }
 
+// TESTIMONY
 .testimony {
   padding: 0 80px;
 
@@ -530,6 +540,7 @@ p {
   height: fit-content;
 }
 
+// CONTACT
 .contact {
   padding-top: 174px;
   margin-bottom: 174px;
@@ -581,6 +592,7 @@ p {
   }
 }
 
+// LOCATION
 .location {
   padding: 0 80px;
   margin-bottom: 174px;
@@ -613,6 +625,7 @@ p {
   flex: 2;
 }
 
+// FOOTER
 .footer__content {
   padding: 40px 80px;
   background-color: $primary-color-60;
