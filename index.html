@@ -23,7 +23,7 @@
   <body>
     <div class="progress-bar"></div>
 
-    <header class="header">
+    <header class="header container">
       <div class="header__responsive-wrapper">
         <div id="brand" class="header__brand">
           <img src="./assets/logo.png" alt="Logo" />
@@ -101,20 +101,24 @@
             <p>
               Selamat datang di Kuka Kukis! sebuah perusahaan kecil yang selalu bersemangat dalam menciptakan
               kenikmatan manis untuk semua pelanggan kami. Sejak didirikan, kami selalu berkomitmen untuk
-              menghadirkan rasa dan kebahagiaan melalui kelezatan kue kami.
-              <br />
-              <br />
-              Kami adalah tim yang berdedikasi dalam menciptakan berbagai variasi kue yang lezat dan menarik.
-              Kue-kue kami dibuat menggunakan bahan-bahan berkualitas tinggi untuk memastikan kualitas
-              terbaik.
-              <br />
-              <br />
-              Kami bangga untuk menjadi bagian dari momen spesial Anda, baik itu perayaan ulang tahun,
-              pernikahan, atau hanya untuk menikmati kebahagiaan sehari-hari.
+              menghadirkan rasa dan kebahagiaan <span class="about__dots">. . . . </span>
+              <span class="about__text-more">
+                melalui kelezatan kue kami.
+                <br />
+                <br />
+                Kami adalah tim yang berdedikasi dalam menciptakan berbagai variasi kue yang lezat dan
+                menarik. Kue-kue kami dibuat menggunakan bahan-bahan berkualitas tinggi untuk memastikan
+                kualitas terbaik.
+                <br />
+                <br />
+                Kami bangga untuk menjadi bagian dari momen spesial Anda, baik itu perayaan ulang tahun,
+                pernikahan, atau hanya untuk menikmati kebahagiaan sehari-hari.
+              </span>
             </p>
+            <button class="about__btn-more" type="button" onclick="toggleMore()">Read more</button>
           </div>
 
-          <div class="scroll-animate">
+          <div class="about__img-container scroll-animate">
             <img src="./assets/hello.png" alt="Waving Illustration" />
           </div>
         </div>
@@ -204,17 +208,53 @@
         </div>
 
         <div class="product__container">
-          <div class="scroll-animate">
-            <img src="./assets/kastengel1.jpg" alt="" />
-            <h3>Kastengel</h3>
+          <div class="product__card scroll-animate">
+            <div class="product__card-img">
+              <img src="./assets/kastengel1.jpg" alt="" />
+            </div>
+            <div class="product__card-content">
+              <h3>Kastengel</h3>
+              <p>Kue keju dengan cita rasa yang gurih dan nikmat.</p>
+            </div>
           </div>
-          <div class="scroll-animate">
-            <img src="./assets/brownies.jpg" alt="" />
-            <h3>Brownies Kering</h3>
+          <div class="product__card scroll-animate">
+            <div class="product__card-img">
+              <img src="./assets/brownies.jpg" alt="" />
+            </div>
+            <div class="product__card-content">
+              <h3>Brownies Kering</h3>
+              <p>Kue sejenis cake cokelat yang disajikan dalam bentuk kering.</p>
+            </div>
           </div>
-          <div class="scroll-animate">
-            <img src="./assets/pie.jpg" alt="" />
-            <h3>Pie Susu</h3>
+          <div class="product__card scroll-animate">
+            <div class="product__card-img">
+              <img src="./assets/pie.jpg" alt="" />
+            </div>
+
+            <div class="product__card-content">
+              <h3>Pie Susu</h3>
+              <p>Kue adonan pastri yang berisi dengan susu manis.</p>
+            </div>
+          </div>
+          <div class="product__card scroll-animate">
+            <div class="product__card-img">
+              <img src="./assets/nastar.jpg" alt="" />
+            </div>
+
+            <div class="product__card-content">
+              <h3>Nastar</h3>
+              <p>Kue kering yang diisi dengan selai nanas.</p>
+            </div>
+          </div>
+          <div class="product__card scroll-animate">
+            <div class="product__card-img">
+              <img src="./assets/bolukering.jpg" alt="" />
+            </div>
+
+            <div class="product__card-content">
+              <h3>Bolu Kering</h3>
+              <p>kue bolu yang disajikan dalam bentuk kering.</p>
+            </div>
           </div>
         </div>
 
@@ -257,7 +297,7 @@
         <div class="faq__content">
           <div class="faq__accordion">
             <div class="faq__accordion-toggle">
-              <h3>Bagaimana caranya?</h3>
+              <h3>Bagaimana sistem order di Kuka Kukis?</h3>
               <button class="faq__accordion-toggle-btn">
                 <svg
                   fill="none"
@@ -273,16 +313,14 @@
             </div>
             <div class="faq__accordion-content">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum perspiciatis quia
-                illum soluta laborum, velit delectus ea accusamus tenetur aliquid vitae, ratione animi a
-                expedita. Tempore voluptatem numquam eum, iure cum ut, dolorum nesciunt esse et hic explicabo
-                rerum.
+                Sistemnya pre-order 1-2 hari. Untuk pesenan lebih dari 5 pcs akan dikirim H+7 setelah
+                pembayaran.
               </p>
             </div>
           </div>
           <div class="faq__accordion">
             <div class="faq__accordion-toggle">
-              <h3>lorem ipsum sit</h3>
+              <h3>Apakah Kuka Kukis melayani pembelian secara offline?</h3>
               <button class="faq__accordion-toggle-btn">
                 <svg
                   fill="none"
@@ -298,10 +336,32 @@
             </div>
             <div class="faq__accordion-content">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum perspiciatis quia
-                illum soluta laborum, velit delectus ea accusamus tenetur aliquid vitae, ratione animi a
-                expedita. Tempore voluptatem numquam eum, iure cum ut, dolorum nesciunt esse et hic explicabo
-                rerum.
+                Saat ini, Kami lebih fokus untuk menjual kue-kue kami secara online. Anda dapat melakukan
+                pemesanan dengan menghubungi nomor whatsapp yang tertera.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__accordion">
+            <div class="faq__accordion-toggle">
+              <h3>Jenis kue apa saja yang dijual di Kuka Kukis?</h3>
+              <button class="faq__accordion-toggle-btn">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="faq__accordion-content">
+              <p>
+                Kami menjual berbagai macam kue khususnya kue kering. Kue-kue yang kami sediakan antara lain:
+                Kastegel, Brownies Kering, Pie Susu, Nastar, Choco Cookies, dan Bolu Kering.
               </p>
             </div>
           </div>
@@ -314,7 +374,7 @@
         </div>
 
         <div class="testimony__card-list">
-          <div class="testimony__card">
+          <div class="testimony__card scroll-animate">
             <svg
               class="testimony__avatar"
               xmlns="http://www.w3.org/2000/svg"
@@ -354,14 +414,13 @@
                 />
               </svg>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio maxime excepturi
-                dolorum facere assumenda dolores ad saepe consequuntur quidem.
+                Enakk bangett. Apalagi brownies keringnyaaa. Luarnya crispy tapi dalemnya lembut banget 😍😍
               </p>
-              <h3>- Nisa Silema</h3>
+              <h3>- Nisa</h3>
             </div>
           </div>
 
-          <div class="testimony__card">
+          <div class="testimony__card scroll-animate">
             <svg
               class="testimony__avatar"
               xmlns="http://www.w3.org/2000/svg"
@@ -401,14 +460,14 @@
                 />
               </svg>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio maxime excepturi
-                dolorum facere assumenda dolores ad saepe consequuntur quidem.
+                Nastarnya enak sekali, kak. Selainya lumer di mulut. Perpaduan rasa gurih, manis, dan asem
+                dari selainya pas banget.
               </p>
-              <h3>- Nisa Silema</h3>
+              <h3>- Tias</h3>
             </div>
           </div>
 
-          <div class="testimony__card">
+          <div class="testimony__card scroll-animate">
             <svg
               class="testimony__avatar"
               xmlns="http://www.w3.org/2000/svg"
@@ -448,10 +507,10 @@
                 />
               </svg>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio maxime excepturi
-                dolorum facere assumenda dolores ad saepe consequuntur quidem.
+                Browniesnya enak kak. Berasa banget cokelatnya, tapi manisnya pas. Ada sedikit rasa pahit dari
+                cokelatnya. Tekstur luarnya garing dalemnya lembut banget.
               </p>
-              <h3>- Nisa Silema</h3>
+              <h3>- Hemalina</h3>
             </div>
           </div>
         </div>

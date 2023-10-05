@@ -9,17 +9,16 @@
     }
   }
 
-  .product__container {
-    flex-direction: column;
-    gap: 32px;
-  }
-
   .blob3 {
     top: 0;
 
     svg {
       width: 50vw;
     }
+  }
+
+  .product__container {
+    flex-direction: column;
   }
 
   .contact__content {
@@ -34,11 +33,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
   .header {
     padding: 16px 10%;
 
@@ -167,10 +161,14 @@
   }
 
   .product__container {
-    width: 100%;
-    gap: 32px;
+    gap: 12px;
+  }
 
-    & > div img {
+  .product__card {
+    flex-basis: calc(50% - 12px);
+    flex-grow: 1;
+
+    img {
       height: 200px;
     }
   }
@@ -289,5 +287,11 @@
 
   .testimony__card-list {
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  .product__card {
+    flex-basis: calc(50% - 40px);
   }
 }

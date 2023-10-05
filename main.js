@@ -63,6 +63,22 @@ function accordionToggle() {
   });
 }
 
+function toggleMore() {
+  const dots = $('.about__content').find('.about__dots')[0];
+  const moreText = $('.about__content').find('.about__text-more')[0];
+  const btnText = $('.about__content').find('.about__btn-more')[0];
+
+  if (dots.style.display === 'none') {
+    dots.style.display = 'inline';
+    btnText.innerHTML = 'Read more';
+    moreText.style.maxHeight = 0;
+  } else {
+    dots.style.display = 'none';
+    btnText.innerHTML = 'Read less';
+    moreText.style.maxHeight = '500px';
+  }
+}
+
 $(document).ready(function () {
   $('header')
     .find('.header__btn-menu')
