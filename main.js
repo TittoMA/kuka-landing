@@ -79,6 +79,55 @@ function toggleMore() {
   }
 }
 
+let active = 1;
+const cardCount = $('.testimony__carousel-item').length;
+
+function prevSlide() {
+  active = (active - 1 + cardCount) % cardCount;
+  updateCarousel();
+}
+
+function nextSlide() {
+  active = (active + 1) % cardCount;
+  updateCarousel();
+}
+
+function updateCarousel() {
+  $('.testimony__carousel-item').each(function (i) {
+    const offset = ((active - i) % cardCount) / 3;
+    const direction = Math.sign(active - i);
+    const absOffset = Math.abs(active - i) / 3;
+    const isActive = i === active ? 1 : 0;
+    const opacity = Math.abs(active - i) <= 1 ? 1 : 0;
+    const display = Math.abs(active - i) <= 1 ? 'block' : 'none';
+    const blur = i === active ? 0 : 3;
+
+    console.log('offset ke-', i, offset);
+    console.log('dir ke-', i, direction);
+    console.log('abs ke-', i, absOffset);
+    console.log('isActive ke-', i, isActive);
+
+    const rotateY = offset * 50;
+    const scaleY = 1 + absOffset * -0.4;
+    const translateZ = absOffset * -30;
+    const translateX = direction * -5;
+
+    const transform = `rotateY(${rotateY}deg) scaleY(${scaleY}) translateZ(${translateZ}rem) translateX(${translateX}rem)`;
+    const filter = `blur(${blur}px)`;
+
+    $(this).css({
+      // '--offset': offset,
+      // '--direction': direction,
+      // '--abs-offset': absOffset,
+      // '--active': isActive,
+      // '--opacity': opacity,
+      filter: filter,
+      transform: transform,
+      display: display,
+    });
+  });
+}
+
 $(document).ready(function () {
   $('header')
     .find('.header__btn-menu')
@@ -92,4 +141,5 @@ $(document).ready(function () {
   $(window).scroll(function () {
     checkVisible();
   });
+  updateCarousel();
 });

@@ -88,7 +88,7 @@
 
   .hero {
     padding: 0 10%;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 20px;
   }
 
@@ -124,6 +124,7 @@
   }
 
   .about {
+    padding: 0 10%;
     padding-top: 120px;
     margin-bottom: 120px;
   }
@@ -156,6 +157,7 @@
   }
 
   .product {
+    padding: 0 10%;
     padding-top: 120px;
     gap: 36px;
   }
@@ -182,6 +184,7 @@
   }
 
   .faq {
+    padding: 0 10%;
     padding-top: 120px;
     flex-direction: column;
     align-items: center;
@@ -192,14 +195,31 @@
   }
 
   .faq__content {
-    gap: 10px;
+    gap: 20px;
+  }
+
+  .faq__accordion-toggle {
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .faq__accordion-content {
+    p {
+      font-size: 14px;
+    }
   }
 
   .faq__accordion-content.show {
     max-height: 500px;
   }
 
+  .testimony {
+    padding: 0 10%;
+  }
+
   .contact {
+    padding: 0 10%;
     padding-top: 120px;
     margin-bottom: 120px;
   }
@@ -255,8 +275,14 @@
   }
 
   .footer__menu-wrapper {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
+  }
+
+  .footer__menu {
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -293,5 +319,19 @@
 @media screen and (min-width: 769px) and (max-width: 960px) {
   .product__card {
     flex-basis: calc(50% - 40px);
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 767px) {
+  .header,
+  .about,
+  .feature,
+  .product,
+  .faq,
+  .testimony,
+  .contact,
+  .location {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

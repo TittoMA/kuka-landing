@@ -14,46 +14,57 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
-    <!-- <link rel="stylesheet" href="responsive.css" /> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <title>Kuka Kukis</title>
   </head>
 
   <body>
     <div class="progress-bar"></div>
 
-    <header class="header container">
-      <div class="header__responsive-wrapper">
-        <div id="brand" class="header__brand">
-          <img src="./assets/logo.png" alt="Logo" />
-          <h1><a href="/">Kuka Kukis</a></h1>
+    <header class="header-section">
+      <div class="header container">
+        <div class="header__responsive-wrapper">
+          <div id="brand" class="header__brand">
+            <img src="./assets/logo.png" alt="Logo" />
+            <h1><a href="/">Kuka Kukis</a></h1>
+          </div>
+          <button class="header__btn-menu">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              ></path>
+            </svg>
+          </button>
         </div>
-        <button class="header__btn-menu">
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            ></path>
-          </svg>
-        </button>
-      </div>
 
-      <nav>
-        <a href="/">Home</a>
-        <a href="#about">About</a>
-        <a href="#product">Product</a>
-        <a href="#faq">F.A.Q</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <nav>
+          <a href="/">Home</a>
+          <a href="#about">About</a>
+          <a href="#product">Product</a>
+          <a href="#faq">F.A.Q</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -93,199 +104,222 @@
         </div>
       </div>
 
-      <div id="about" class="about container">
-        <h2>About us</h2>
-        <div class="about__content">
-          <div>
-            <h1 class="scroll-animate">We are passionate creators of Tasteful cookies</h1>
-            <p>
-              Selamat datang di Kuka Kukis! sebuah perusahaan kecil yang selalu bersemangat dalam menciptakan
-              kenikmatan manis untuk semua pelanggan kami. Sejak didirikan, kami selalu berkomitmen untuk
-              menghadirkan rasa dan kebahagiaan <span class="about__dots">. . . . </span>
-              <span class="about__text-more">
-                melalui kelezatan kue kami.
-                <br />
-                <br />
-                Kami adalah tim yang berdedikasi dalam menciptakan berbagai variasi kue yang lezat dan
-                menarik. Kue-kue kami dibuat menggunakan bahan-bahan berkualitas tinggi untuk memastikan
-                kualitas terbaik.
-                <br />
-                <br />
-                Kami bangga untuk menjadi bagian dari momen spesial Anda, baik itu perayaan ulang tahun,
-                pernikahan, atau hanya untuk menikmati kebahagiaan sehari-hari.
-              </span>
-            </p>
-            <button class="about__btn-more" type="button" onclick="toggleMore()">Read more</button>
-          </div>
-
-          <div class="about__img-container scroll-animate">
-            <img src="./assets/hello.png" alt="Waving Illustration" />
-          </div>
-        </div>
-        <div class="blob-shape blob2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="465" height="632" viewBox="0 0 465 632" fill="none">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M110.49 2.55792C198.089 -12.1116 283.458 38.44 347.62 99.8576C413.292 162.722 482.952 249.058 459.859 336.987C437.652 421.544 315.855 419.168 248.974 475.471C193.749 521.96 182.677 631.017 110.49 631.096C38.3114 631.175 14.3537 534.004 -28.2968 475.774C-60.7592 431.454 -99.5475 391.66 -104.93 336.987C-110.884 276.524 -91.5116 218.962 -58.611 167.886C-14.2333 98.9919 29.6659 16.0929 110.49 2.55792Z"
-              fill="#FFD2C8"
-            />
-          </svg>
-        </div>
-      </div>
-
-      <div class="feature container">
-        <div class="feature__card-list">
-          <div class="feature__card scroll-animate">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81" fill="none">
-              <path
-                d="M40 0.5C43.225 0.5 46.3635 0.8821 49.3725 1.60465C50.2585 1.81745 50.9585 2.4954 51.1995 3.37415C51.4405 4.2529 51.1845 5.1932 50.531 5.8283C48.6585 7.64825 47.5 10.1867 47.5 13C47.5 17.7661 50.837 21.7588 55.304 22.7586C56.582 23.0447 57.5 24.18 57.5 25.5C57.5 31.0229 61.977 35.5 67.5 35.5C70.4945 35.5 73.179 34.187 75.0155 32.097C75.6485 31.3766 76.6375 31.0817 77.5615 31.338C78.4855 31.5942 79.1815 32.3564 79.3535 33.2998C79.7785 35.6373 80 38.0438 80 40.5C80 62.5915 62.0915 80.5 40 80.5C17.9086 80.5 0 62.5915 0 40.5C0 18.4086 17.9086 0.5 40 0.5ZM50 55.5C47.2385 55.5 45 57.7385 45 60.5C45 63.2615 47.2385 65.5 50 65.5C52.7615 65.5 55 63.2615 55 60.5C55 57.7385 52.7615 55.5 50 55.5ZM25 50.5C22.2386 50.5 20 52.7385 20 55.5C20 58.2615 22.2386 60.5 25 60.5C27.7614 60.5 30 58.2615 30 55.5C30 52.7385 27.7614 50.5 25 50.5ZM40 35.5C37.2386 35.5 35 37.7386 35 40.5C35 43.2615 37.2386 45.5 40 45.5C42.7615 45.5 45 43.2615 45 40.5C45 37.7386 42.7615 35.5 40 35.5ZM20 25.5C17.2386 25.5 15 27.7386 15 30.5C15 33.2614 17.2386 35.5 20 35.5C22.7614 35.5 25 33.2614 25 30.5C25 27.7386 22.7614 25.5 20 25.5Z"
-                fill="#471F1F"
-              />
-            </svg>
+      <div id="about" class="about-section">
+        <div class="about container">
+          <h2>Get to Know Us</h2>
+          <div class="about__content">
             <div>
-              <h3>Kelezatan yang Berbeda</h3>
-              <p>Kue-kue kami memiliki rasa dan tekstur yang menggugah selera.</p>
-            </div>
-          </div>
-
-          <div class="feature__card scroll-animate">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="87" viewBox="0 0 80 87" fill="none">
-              <path
-                d="M29.2309 21.932H36.9232V14.2397C36.9232 12.7183 36.4721 11.2311 35.6268 9.96606C34.7816 8.70106 33.5802 7.71512 32.1746 7.13291C30.769 6.5507 29.2224 6.39836 27.7302 6.69517C26.238 6.99198 24.8674 7.7246 23.7916 8.80039C22.7158 9.87618 21.9832 11.2468 21.6864 12.739C21.3896 14.2311 21.5419 15.7778 22.1241 17.1834C22.7063 18.589 23.6923 19.7904 24.9573 20.6356C26.2223 21.4808 27.7095 21.932 29.2309 21.932Z"
-                fill="#471F1F"
-              />
-              <path
-                d="M58.4615 14.2397C58.4615 12.1995 57.6511 10.243 56.2085 8.80039C54.7659 7.3578 52.8093 6.54736 50.7692 6.54736C48.7291 6.54736 46.7725 7.3578 45.3299 8.80039C43.8873 10.243 43.0769 12.1995 43.0769 14.2397V21.932H50.7692C52.8093 21.932 54.7659 21.1215 56.2085 19.679C57.6511 18.2364 58.4615 16.2798 58.4615 14.2397Z"
-                fill="#471F1F"
-              />
-              <path
-                d="M6.15381 74.2397C6.15381 77.5039 7.45051 80.6344 9.75865 82.9426C12.0668 85.2507 15.1973 86.5474 18.4615 86.5474H36.1538C36.3578 86.5474 36.5535 86.4664 36.6977 86.3221C36.842 86.1778 36.923 85.9822 36.923 85.7782V50.3936C36.923 50.1895 36.842 49.9939 36.6977 49.8496C36.5535 49.7054 36.3578 49.6243 36.1538 49.6243H7.69227C7.28424 49.6243 6.89293 49.7864 6.60441 50.0749C6.3159 50.3634 6.15381 50.7548 6.15381 51.1628V74.2397Z"
-                fill="#471F1F"
-              />
-              <path
-                d="M36.9231 42.7012V21.932H43.0769V42.7012C43.0769 42.9052 43.158 43.1009 43.3022 43.2451C43.4465 43.3894 43.6421 43.4704 43.8462 43.4704H70.7692C71.8175 43.4704 72.858 43.2916 73.8462 42.9416C75.6443 42.3032 77.201 41.1242 78.3027 39.5663C79.4044 38.0084 79.9973 36.1478 80 34.2397V31.1628C80 28.7146 79.0275 26.3667 77.2964 24.6356C75.5653 22.9045 73.2174 21.932 70.7692 21.932H62.9731C62.9061 21.9309 62.8405 21.9124 62.7829 21.8782C62.7253 21.844 62.6776 21.7953 62.6446 21.737C62.6116 21.6787 62.5943 21.6128 62.5946 21.5458C62.5949 21.4788 62.6126 21.4131 62.6462 21.3551C64.4266 18.3491 65.0049 14.7811 64.265 11.3666C63.5252 7.95218 61.5219 4.94361 58.6568 2.94422C55.7918 0.944824 52.2768 0.102416 48.8167 0.585909C45.3566 1.0694 42.2072 2.84305 40 5.55121C37.7928 2.84305 34.6434 1.0694 31.1833 0.585909C27.7232 0.102416 24.2082 0.944824 21.3432 2.94422C18.4781 4.94361 16.4748 7.95218 15.735 11.3666C14.9951 14.7811 15.5734 18.3491 17.3538 21.3551C17.3874 21.4131 17.4051 21.4788 17.4054 21.5458C17.4057 21.6128 17.3884 21.6787 17.3554 21.737C17.3224 21.7953 17.2747 21.844 17.2171 21.8782C17.1595 21.9124 17.0939 21.9309 17.0269 21.932H9.23077C6.78262 21.932 4.43474 22.9045 2.70363 24.6356C0.972525 26.3667 0 28.7146 0 31.1628V34.2397C0.00271581 36.1478 0.595583 38.0084 1.69731 39.5663C2.79904 41.1242 4.3557 42.3032 6.15385 42.9416C7.14195 43.2916 8.18252 43.4704 9.23077 43.4704H36.1538C36.3579 43.4704 36.5535 43.3894 36.6978 43.2451C36.842 43.1009 36.9231 42.9052 36.9231 42.7012ZM43.0769 14.2397C43.0769 12.7183 43.5281 11.2311 44.3733 9.96606C45.2186 8.70106 46.4199 7.71512 47.8255 7.13291C49.2311 6.55069 50.7778 6.39836 52.2699 6.69517C53.7621 6.99198 55.1327 7.7246 56.2085 8.80039C57.2843 9.87618 58.0169 11.2468 58.3137 12.739C58.6105 14.2311 58.4582 15.7778 57.876 17.1834C57.2938 18.589 56.3078 19.7904 55.0429 20.6356C53.7779 21.4808 52.2906 21.932 50.7692 21.932H43.0769V14.2397ZM28.6808 6.5666C29.7346 6.49105 30.7927 6.63342 31.7891 6.98481C32.7855 7.3362 33.6988 7.88908 34.4722 8.60899C35.2455 9.3289 35.8622 10.2004 36.2839 11.1691C36.7056 12.1379 36.9231 13.1831 36.9231 14.2397V21.932H29.2308C27.2417 21.9269 25.332 21.1515 23.9023 19.7686C22.4727 18.3856 21.6343 16.5027 21.5631 14.5149C21.492 12.5271 22.1936 10.589 23.5207 9.10742C24.8478 7.6258 26.6972 6.71584 28.6808 6.56852V6.5666Z"
-                fill="#471F1F"
-              />
-              <path
-                d="M43.8461 86.5474H61.5384C64.8026 86.5474 67.9332 85.2507 70.2413 82.9426C72.5494 80.6344 73.8461 77.5039 73.8461 74.2397V51.1628C73.8461 50.7548 73.684 50.3634 73.3955 50.0749C73.107 49.7864 72.7157 49.6243 72.3077 49.6243H43.8461C43.6421 49.6243 43.4465 49.7054 43.3022 49.8496C43.1579 49.9939 43.0769 50.1895 43.0769 50.3936V85.7782C43.0769 85.9822 43.1579 86.1778 43.3022 86.3221C43.4465 86.4664 43.6421 86.5474 43.8461 86.5474Z"
-                fill="#471F1F"
-              />
-            </svg>
-            <div>
-              <h3>Hadiah sempurna</h3>
+              <h1 class="scroll-animate">We are passionate creators of Tasteful cookies</h1>
               <p>
-                Cocok dijadikan hadiah untuk ulang tahun, liburan, atau setiap kesempatan yang layak
-                dirayakan.
+                Selamat datang di Kuka Kukis! sebuah perusahaan kecil yang selalu bersemangat dalam
+                menciptakan kenikmatan manis untuk semua pelanggan kami. Sejak didirikan, kami selalu
+                berkomitmen untuk menghadirkan rasa dan kebahagiaan <span class="about__dots">. . . . </span>
+                <span class="about__text-more">
+                  melalui kelezatan kue kami.
+                  <br />
+                  <br />
+                  Kami adalah tim yang berdedikasi dalam menciptakan berbagai variasi kue yang lezat dan
+                  menarik. Kue-kue kami dibuat menggunakan bahan-bahan berkualitas tinggi untuk memastikan
+                  kualitas terbaik.
+                  <br />
+                  <br />
+                  Kami bangga untuk menjadi bagian dari momen spesial Anda, baik itu perayaan ulang tahun,
+                  pernikahan, atau hanya untuk menikmati kebahagiaan sehari-hari.
+                </span>
               </p>
+              <button class="about__btn-more" type="button" onclick="toggleMore()">Read more</button>
+            </div>
+
+            <div class="about__img-container scroll-animate">
+              <img src="./assets/hello.png" alt="Waving Illustration" />
             </div>
           </div>
-
-          <div class="feature__card scroll-animate">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81" fill="none">
+          <div class="blob-shape blob2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="465"
+              height="632"
+              viewBox="0 0 465 632"
+              fill="none"
+            >
               <path
-                d="M40 0.5C17.8667 0.5 0 18.3667 0 40.5C0 62.6333 17.8667 80.5 40 80.5C62.1333 80.5 80 62.6333 80 40.5C80 18.3667 62.1333 0.5 40 0.5ZM40 64.5C38.1333 62.1 12.6667 47.3 17.8667 30.9C22.5333 16.1 38 22.1 40 30.1C41.4667 22.6333 57.2 15.8333 62.1333 30.9C67.3333 47.0333 41.8667 62.6333 40 64.5Z"
-                fill="#471F1F"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M110.49 2.55792C198.089 -12.1116 283.458 38.44 347.62 99.8576C413.292 162.722 482.952 249.058 459.859 336.987C437.652 421.544 315.855 419.168 248.974 475.471C193.749 521.96 182.677 631.017 110.49 631.096C38.3114 631.175 14.3537 534.004 -28.2968 475.774C-60.7592 431.454 -99.5475 391.66 -104.93 336.987C-110.884 276.524 -91.5116 218.962 -58.611 167.886C-14.2333 98.9919 29.6659 16.0929 110.49 2.55792Z"
+                fill="#FFD2C8"
               />
             </svg>
-            <div>
-              <h3>Pelanggan nomor 1!</h3>
-              <p>Kami menghargai pelanggan kami di atas segalanya. Kepuasan Anda adalah prioritas kami.</p>
-            </div>
           </div>
         </div>
-
-        <h1 class="feature__headline">
-          Why <br />
-          Choose <br /><span style="background-color: #ff8e75; border-radius: 10px">Us?</span>
-        </h1>
       </div>
 
-      <div id="product" class="product container">
-        <div style="text-align: center">
-          <h1>Our <b>Top Products</b></h1>
-          <p>Beberapa produk pilihan kami yang terlaris</p>
+      <div class="feature-section">
+        <div class="feature container">
+          <div class="feature__card-list">
+            <div class="feature__card scroll-animate">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81" fill="none">
+                <path
+                  d="M40 0.5C43.225 0.5 46.3635 0.8821 49.3725 1.60465C50.2585 1.81745 50.9585 2.4954 51.1995 3.37415C51.4405 4.2529 51.1845 5.1932 50.531 5.8283C48.6585 7.64825 47.5 10.1867 47.5 13C47.5 17.7661 50.837 21.7588 55.304 22.7586C56.582 23.0447 57.5 24.18 57.5 25.5C57.5 31.0229 61.977 35.5 67.5 35.5C70.4945 35.5 73.179 34.187 75.0155 32.097C75.6485 31.3766 76.6375 31.0817 77.5615 31.338C78.4855 31.5942 79.1815 32.3564 79.3535 33.2998C79.7785 35.6373 80 38.0438 80 40.5C80 62.5915 62.0915 80.5 40 80.5C17.9086 80.5 0 62.5915 0 40.5C0 18.4086 17.9086 0.5 40 0.5ZM50 55.5C47.2385 55.5 45 57.7385 45 60.5C45 63.2615 47.2385 65.5 50 65.5C52.7615 65.5 55 63.2615 55 60.5C55 57.7385 52.7615 55.5 50 55.5ZM25 50.5C22.2386 50.5 20 52.7385 20 55.5C20 58.2615 22.2386 60.5 25 60.5C27.7614 60.5 30 58.2615 30 55.5C30 52.7385 27.7614 50.5 25 50.5ZM40 35.5C37.2386 35.5 35 37.7386 35 40.5C35 43.2615 37.2386 45.5 40 45.5C42.7615 45.5 45 43.2615 45 40.5C45 37.7386 42.7615 35.5 40 35.5ZM20 25.5C17.2386 25.5 15 27.7386 15 30.5C15 33.2614 17.2386 35.5 20 35.5C22.7614 35.5 25 33.2614 25 30.5C25 27.7386 22.7614 25.5 20 25.5Z"
+                  fill="#471F1F"
+                />
+              </svg>
+              <div>
+                <h3>Kelezatan yang Berbeda</h3>
+                <p>Kue-kue kami memiliki rasa dan tekstur yang menggugah selera.</p>
+              </div>
+            </div>
+
+            <div class="feature__card scroll-animate">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="87" viewBox="0 0 80 87" fill="none">
+                <path
+                  d="M29.2309 21.932H36.9232V14.2397C36.9232 12.7183 36.4721 11.2311 35.6268 9.96606C34.7816 8.70106 33.5802 7.71512 32.1746 7.13291C30.769 6.5507 29.2224 6.39836 27.7302 6.69517C26.238 6.99198 24.8674 7.7246 23.7916 8.80039C22.7158 9.87618 21.9832 11.2468 21.6864 12.739C21.3896 14.2311 21.5419 15.7778 22.1241 17.1834C22.7063 18.589 23.6923 19.7904 24.9573 20.6356C26.2223 21.4808 27.7095 21.932 29.2309 21.932Z"
+                  fill="#471F1F"
+                />
+                <path
+                  d="M58.4615 14.2397C58.4615 12.1995 57.6511 10.243 56.2085 8.80039C54.7659 7.3578 52.8093 6.54736 50.7692 6.54736C48.7291 6.54736 46.7725 7.3578 45.3299 8.80039C43.8873 10.243 43.0769 12.1995 43.0769 14.2397V21.932H50.7692C52.8093 21.932 54.7659 21.1215 56.2085 19.679C57.6511 18.2364 58.4615 16.2798 58.4615 14.2397Z"
+                  fill="#471F1F"
+                />
+                <path
+                  d="M6.15381 74.2397C6.15381 77.5039 7.45051 80.6344 9.75865 82.9426C12.0668 85.2507 15.1973 86.5474 18.4615 86.5474H36.1538C36.3578 86.5474 36.5535 86.4664 36.6977 86.3221C36.842 86.1778 36.923 85.9822 36.923 85.7782V50.3936C36.923 50.1895 36.842 49.9939 36.6977 49.8496C36.5535 49.7054 36.3578 49.6243 36.1538 49.6243H7.69227C7.28424 49.6243 6.89293 49.7864 6.60441 50.0749C6.3159 50.3634 6.15381 50.7548 6.15381 51.1628V74.2397Z"
+                  fill="#471F1F"
+                />
+                <path
+                  d="M36.9231 42.7012V21.932H43.0769V42.7012C43.0769 42.9052 43.158 43.1009 43.3022 43.2451C43.4465 43.3894 43.6421 43.4704 43.8462 43.4704H70.7692C71.8175 43.4704 72.858 43.2916 73.8462 42.9416C75.6443 42.3032 77.201 41.1242 78.3027 39.5663C79.4044 38.0084 79.9973 36.1478 80 34.2397V31.1628C80 28.7146 79.0275 26.3667 77.2964 24.6356C75.5653 22.9045 73.2174 21.932 70.7692 21.932H62.9731C62.9061 21.9309 62.8405 21.9124 62.7829 21.8782C62.7253 21.844 62.6776 21.7953 62.6446 21.737C62.6116 21.6787 62.5943 21.6128 62.5946 21.5458C62.5949 21.4788 62.6126 21.4131 62.6462 21.3551C64.4266 18.3491 65.0049 14.7811 64.265 11.3666C63.5252 7.95218 61.5219 4.94361 58.6568 2.94422C55.7918 0.944824 52.2768 0.102416 48.8167 0.585909C45.3566 1.0694 42.2072 2.84305 40 5.55121C37.7928 2.84305 34.6434 1.0694 31.1833 0.585909C27.7232 0.102416 24.2082 0.944824 21.3432 2.94422C18.4781 4.94361 16.4748 7.95218 15.735 11.3666C14.9951 14.7811 15.5734 18.3491 17.3538 21.3551C17.3874 21.4131 17.4051 21.4788 17.4054 21.5458C17.4057 21.6128 17.3884 21.6787 17.3554 21.737C17.3224 21.7953 17.2747 21.844 17.2171 21.8782C17.1595 21.9124 17.0939 21.9309 17.0269 21.932H9.23077C6.78262 21.932 4.43474 22.9045 2.70363 24.6356C0.972525 26.3667 0 28.7146 0 31.1628V34.2397C0.00271581 36.1478 0.595583 38.0084 1.69731 39.5663C2.79904 41.1242 4.3557 42.3032 6.15385 42.9416C7.14195 43.2916 8.18252 43.4704 9.23077 43.4704H36.1538C36.3579 43.4704 36.5535 43.3894 36.6978 43.2451C36.842 43.1009 36.9231 42.9052 36.9231 42.7012ZM43.0769 14.2397C43.0769 12.7183 43.5281 11.2311 44.3733 9.96606C45.2186 8.70106 46.4199 7.71512 47.8255 7.13291C49.2311 6.55069 50.7778 6.39836 52.2699 6.69517C53.7621 6.99198 55.1327 7.7246 56.2085 8.80039C57.2843 9.87618 58.0169 11.2468 58.3137 12.739C58.6105 14.2311 58.4582 15.7778 57.876 17.1834C57.2938 18.589 56.3078 19.7904 55.0429 20.6356C53.7779 21.4808 52.2906 21.932 50.7692 21.932H43.0769V14.2397ZM28.6808 6.5666C29.7346 6.49105 30.7927 6.63342 31.7891 6.98481C32.7855 7.3362 33.6988 7.88908 34.4722 8.60899C35.2455 9.3289 35.8622 10.2004 36.2839 11.1691C36.7056 12.1379 36.9231 13.1831 36.9231 14.2397V21.932H29.2308C27.2417 21.9269 25.332 21.1515 23.9023 19.7686C22.4727 18.3856 21.6343 16.5027 21.5631 14.5149C21.492 12.5271 22.1936 10.589 23.5207 9.10742C24.8478 7.6258 26.6972 6.71584 28.6808 6.56852V6.5666Z"
+                  fill="#471F1F"
+                />
+                <path
+                  d="M43.8461 86.5474H61.5384C64.8026 86.5474 67.9332 85.2507 70.2413 82.9426C72.5494 80.6344 73.8461 77.5039 73.8461 74.2397V51.1628C73.8461 50.7548 73.684 50.3634 73.3955 50.0749C73.107 49.7864 72.7157 49.6243 72.3077 49.6243H43.8461C43.6421 49.6243 43.4465 49.7054 43.3022 49.8496C43.1579 49.9939 43.0769 50.1895 43.0769 50.3936V85.7782C43.0769 85.9822 43.1579 86.1778 43.3022 86.3221C43.4465 86.4664 43.6421 86.5474 43.8461 86.5474Z"
+                  fill="#471F1F"
+                />
+              </svg>
+              <div>
+                <h3>Hadiah sempurna</h3>
+                <p>
+                  Cocok dijadikan hadiah untuk ulang tahun, liburan, atau setiap kesempatan yang layak
+                  dirayakan.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature__card scroll-animate">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81" fill="none">
+                <path
+                  d="M40 0.5C17.8667 0.5 0 18.3667 0 40.5C0 62.6333 17.8667 80.5 40 80.5C62.1333 80.5 80 62.6333 80 40.5C80 18.3667 62.1333 0.5 40 0.5ZM40 64.5C38.1333 62.1 12.6667 47.3 17.8667 30.9C22.5333 16.1 38 22.1 40 30.1C41.4667 22.6333 57.2 15.8333 62.1333 30.9C67.3333 47.0333 41.8667 62.6333 40 64.5Z"
+                  fill="#471F1F"
+                />
+              </svg>
+              <div>
+                <h3>Pelanggan nomor 1!</h3>
+                <p>Kami menghargai pelanggan kami di atas segalanya. Kepuasan Anda adalah prioritas kami.</p>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="feature__headline">
+            Why <br />
+            Choose <br /><span style="background-color: #ff8e75; border-radius: 10px">Us?</span>
+          </h1>
         </div>
+      </div>
 
-        <div class="product__container">
-          <div class="product__card scroll-animate">
-            <div class="product__card-img">
-              <img src="./assets/kastengel1.jpg" alt="" />
+      <div id="product" class="product-section">
+        <div class="product container">
+          <div style="text-align: center">
+            <h1>Our <b>Top Products</b></h1>
+            <p>Beberapa produk pilihan kami yang terlaris</p>
+          </div>
+
+          <div class="product__container">
+            <div class="product__card scroll-animate">
+              <div class="product__card-img">
+                <img src="./assets/kastengel1.jpg" alt="" />
+              </div>
+              <div class="product__card-content">
+                <h3>Kastengel</h3>
+                <p>Kue keju dengan cita rasa yang gurih dan nikmat.</p>
+                <h3 class="product__price">Rp. 60,000 / pax</h3>
+              </div>
             </div>
-            <div class="product__card-content">
-              <h3>Kastengel</h3>
-              <p>Kue keju dengan cita rasa yang gurih dan nikmat.</p>
+            <div class="product__card scroll-animate">
+              <div class="product__card-img">
+                <img src="./assets/brownies.jpg" alt="" />
+              </div>
+              <div class="product__card-content">
+                <h3>Brownies Kering</h3>
+                <p>Kue sejenis cake cokelat yang disajikan dalam bentuk kering.</p>
+                <h3 class="product__price">Rp. 65,000 / pax</h3>
+              </div>
+            </div>
+            <div class="product__card scroll-animate">
+              <div class="product__card-img">
+                <img src="./assets/pie.jpg" alt="" />
+              </div>
+
+              <div class="product__card-content">
+                <h3>Pie Susu</h3>
+                <p>Kue adonan pastri yang berisi dengan susu manis.</p>
+                <h3 class="product__price">Rp. 18,000 / pax</h3>
+              </div>
+            </div>
+            <div class="product__card scroll-animate">
+              <div class="product__card-img">
+                <img src="./assets/nastar.jpg" alt="" />
+              </div>
+
+              <div class="product__card-content">
+                <h3>Nastar</h3>
+                <p>Kue kering yang diisi dengan selai nanas.</p>
+                <h3 class="product__price">Rp. 60,000 / pax</h3>
+              </div>
+            </div>
+            <div class="product__card scroll-animate">
+              <div class="product__card-img">
+                <img src="./assets/bolukering.jpg" alt="" />
+              </div>
+
+              <div class="product__card-content">
+                <h3>Bolu Kering</h3>
+                <p>kue bolu yang disajikan dalam bentuk kering.</p>
+                <h3 class="product__price">Rp. 30,000 / pax</h3>
+              </div>
             </div>
           </div>
-          <div class="product__card scroll-animate">
-            <div class="product__card-img">
-              <img src="./assets/brownies.jpg" alt="" />
-            </div>
-            <div class="product__card-content">
-              <h3>Brownies Kering</h3>
-              <p>Kue sejenis cake cokelat yang disajikan dalam bentuk kering.</p>
-            </div>
+
+          <a class="product__btn-order scroll-animate" href="#"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path
+                d="M40.7268 0H7.27333C3.31422 0 0.104736 3.20949 0.104736 7.16859V40.622C0.104736 44.5811 3.31422 47.7906 7.27333 47.7906H40.7268C44.6859 47.7906 47.8954 44.5811 47.8954 40.622V7.16859C47.8954 3.20949 44.6859 0 40.7268 0Z"
+                fill="#25D366"
+              />
+              <path
+                d="M11.5856 36.683L12.8924 30.6159C11.2128 27.9667 10.5576 24.7957 11.0497 21.6978C11.5418 18.5999 13.1473 15.788 15.5652 13.7897C17.983 11.7914 21.0469 10.744 24.1821 10.8441C27.3172 10.9441 30.3081 12.1847 32.5936 14.3331C34.8791 16.4815 36.3022 19.39 36.5958 22.513C36.8893 25.6359 36.0333 28.7587 34.1882 31.2954C32.3432 33.8321 29.6359 35.6084 26.5743 36.291C23.5128 36.9736 20.3073 36.5156 17.5594 35.0029L11.5856 36.683Z"
+                fill="#25D366"
+                stroke="white"
+                stroke-width="2.42687"
+              />
+              <path
+                d="M28.8538 25.4821C28.5738 25.2954 28.2938 25.202 28.0138 25.5754L26.8937 27.0689C26.6137 27.2555 26.427 27.3489 26.0536 27.1622C24.6535 26.4155 22.6933 25.5754 21.0132 22.7752C20.9199 22.4018 21.1065 22.2151 21.2932 22.0284L22.1333 20.7217C22.32 20.535 22.2266 20.3483 22.1333 20.1616L21.0132 17.4547C20.7332 16.708 20.4531 16.8013 20.1731 16.8013H19.4264C19.2397 16.8013 18.8663 16.8947 18.493 17.268C16.4395 19.3215 17.2796 22.2151 18.773 24.0819C19.053 24.4553 20.9199 27.8156 24.9335 29.5891C27.9204 30.8958 28.5738 30.7092 29.4139 30.5225C30.4406 30.4291 31.4674 29.5891 31.9341 28.749C32.0274 28.469 32.4941 27.2555 32.1208 27.0689"
+                fill="white"
+              /></svg
+            >Beli Sekarang Via Whatsapp</a
+          >
+
+          <div class="blob-shape blob3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="347"
+              height="579"
+              viewBox="0 0 347 579"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M273.102 0.516961C356.034 -7.3861 416.25 76.9311 466.416 143.441C508.671 199.462 524.903 266.607 526.716 336.754C528.593 409.372 529.975 490.969 476.676 540.327C424.311 588.822 344.46 570.238 273.102 571.618C199.348 573.045 117.114 596.819 61.4961 548.36C4.17474 498.417 -6.99037 412.047 3.54105 336.754C12.8453 270.234 71.4142 229.484 113.428 177.079C165.026 112.717 190.983 8.34259 273.102 0.516961Z"
+                fill="#FFD2C8"
+              />
+            </svg>
           </div>
-          <div class="product__card scroll-animate">
-            <div class="product__card-img">
-              <img src="./assets/pie.jpg" alt="" />
-            </div>
-
-            <div class="product__card-content">
-              <h3>Pie Susu</h3>
-              <p>Kue adonan pastri yang berisi dengan susu manis.</p>
-            </div>
-          </div>
-          <div class="product__card scroll-animate">
-            <div class="product__card-img">
-              <img src="./assets/nastar.jpg" alt="" />
-            </div>
-
-            <div class="product__card-content">
-              <h3>Nastar</h3>
-              <p>Kue kering yang diisi dengan selai nanas.</p>
-            </div>
-          </div>
-          <div class="product__card scroll-animate">
-            <div class="product__card-img">
-              <img src="./assets/bolukering.jpg" alt="" />
-            </div>
-
-            <div class="product__card-content">
-              <h3>Bolu Kering</h3>
-              <p>kue bolu yang disajikan dalam bentuk kering.</p>
-            </div>
-          </div>
-        </div>
-
-        <a class="product__btn-order scroll-animate" href="#"
-          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-            <path
-              d="M40.7268 0H7.27333C3.31422 0 0.104736 3.20949 0.104736 7.16859V40.622C0.104736 44.5811 3.31422 47.7906 7.27333 47.7906H40.7268C44.6859 47.7906 47.8954 44.5811 47.8954 40.622V7.16859C47.8954 3.20949 44.6859 0 40.7268 0Z"
-              fill="#25D366"
-            />
-            <path
-              d="M11.5856 36.683L12.8924 30.6159C11.2128 27.9667 10.5576 24.7957 11.0497 21.6978C11.5418 18.5999 13.1473 15.788 15.5652 13.7897C17.983 11.7914 21.0469 10.744 24.1821 10.8441C27.3172 10.9441 30.3081 12.1847 32.5936 14.3331C34.8791 16.4815 36.3022 19.39 36.5958 22.513C36.8893 25.6359 36.0333 28.7587 34.1882 31.2954C32.3432 33.8321 29.6359 35.6084 26.5743 36.291C23.5128 36.9736 20.3073 36.5156 17.5594 35.0029L11.5856 36.683Z"
-              fill="#25D366"
-              stroke="white"
-              stroke-width="2.42687"
-            />
-            <path
-              d="M28.8538 25.4821C28.5738 25.2954 28.2938 25.202 28.0138 25.5754L26.8937 27.0689C26.6137 27.2555 26.427 27.3489 26.0536 27.1622C24.6535 26.4155 22.6933 25.5754 21.0132 22.7752C20.9199 22.4018 21.1065 22.2151 21.2932 22.0284L22.1333 20.7217C22.32 20.535 22.2266 20.3483 22.1333 20.1616L21.0132 17.4547C20.7332 16.708 20.4531 16.8013 20.1731 16.8013H19.4264C19.2397 16.8013 18.8663 16.8947 18.493 17.268C16.4395 19.3215 17.2796 22.2151 18.773 24.0819C19.053 24.4553 20.9199 27.8156 24.9335 29.5891C27.9204 30.8958 28.5738 30.7092 29.4139 30.5225C30.4406 30.4291 31.4674 29.5891 31.9341 28.749C32.0274 28.469 32.4941 27.2555 32.1208 27.0689"
-              fill="white"
-            /></svg
-          >Beli Sekarang Via Whatsapp</a
-        >
-
-        <div class="blob-shape blob3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="347" height="579" viewBox="0 0 347 579" fill="none">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M273.102 0.516961C356.034 -7.3861 416.25 76.9311 466.416 143.441C508.671 199.462 524.903 266.607 526.716 336.754C528.593 409.372 529.975 490.969 476.676 540.327C424.311 588.822 344.46 570.238 273.102 571.618C199.348 573.045 117.114 596.819 61.4961 548.36C4.17474 498.417 -6.99037 412.047 3.54105 336.754C12.8453 270.234 71.4142 229.484 113.428 177.079C165.026 112.717 190.983 8.34259 273.102 0.516961Z"
-              fill="#FFD2C8"
-            />
-          </svg>
         </div>
       </div>
 
@@ -373,7 +407,7 @@
           <h1>Hear It From Our Happy Cookie Lovers.</h1>
         </div>
 
-        <div class="testimony__card-list">
+        <!-- <div class="testimony__card-list">
           <div class="testimony__card scroll-animate">
             <svg
               class="testimony__avatar"
@@ -513,6 +547,180 @@
               <h3>- Hemalina</h3>
             </div>
           </div>
+        </div> -->
+
+        <div class="testimony__carousel">
+          <button class="testimony__carousel-nav nav-left" onclick="prevSlide()">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+          </button>
+          <div class="testimony__carousel-wrapper">
+            <div class="testimony__carousel-item">
+              <div class="testimony__card">
+                <svg
+                  class="testimony__avatar"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                >
+                  <path
+                    d="M60 30C60 46.5686 46.5686 60 30 60C13.4314 60 0 46.5686 0 30C0 13.4314 13.4314 0 30 0C46.5686 0 60 13.4314 60 30Z"
+                    fill="#1575E5"
+                  />
+                  <path
+                    d="M10.5 30C10.5 19.2305 19.2305 10.5 30 10.5C40.7696 10.5 49.5 19.2305 49.5 30V43.2273C49.5 44.2063 48.7064 45 47.7273 45C45.5274 45 43.421 44.5992 41.4773 43.8669C40.1918 44.932 38.7557 45.8219 37.2057 46.4997C41.1636 48.2304 44.379 51.3434 46.2416 55.2284C41.5607 58.2477 35.9856 60 30.0012 60C24.0166 60 18.4416 58.2477 13.7607 55.2284C15.6231 51.3437 18.8381 48.231 22.7955 46.5003C21.2451 45.8223 19.8085 44.9323 18.5227 43.8669C16.579 44.5992 14.4726 45 12.2727 45C11.2936 45 10.5 44.2063 10.5 43.2273V30Z"
+                    fill="#A6CFFF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25.5 34.5C26.3284 34.5 27 35.1716 27 36C27 37.6569 28.3431 39 30 39C31.6569 39 33 37.6569 33 36C33 35.1716 33.6716 34.5 34.5 34.5C35.3284 34.5 36 35.1716 36 36C36 39.3137 33.3137 42 30 42C26.6863 42 24 39.3137 24 36C24 35.1716 24.6716 34.5 25.5 34.5Z"
+                    fill="#1575E5"
+                  />
+                  <path
+                    d="M24 26.25C24 27.4926 22.9926 28.5 21.75 28.5C20.5074 28.5 19.5 27.4926 19.5 26.25C19.5 25.0074 20.5074 24 21.75 24C22.9926 24 24 25.0074 24 26.25Z"
+                    fill="#1575E5"
+                  />
+                  <path
+                    d="M40.5 26.25C40.5 27.4926 39.4926 28.5 38.25 28.5C37.0074 28.5 36 27.4926 36 26.25C36 25.0074 37.0074 24 38.25 24C39.4926 24 40.5 25.0074 40.5 26.25Z"
+                    fill="#1575E5"
+                  />
+                </svg>
+                <div class="testimony__content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="26"
+                    viewBox="0 0 30 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.8462 15V21.9231C13.8462 23.8341 12.2957 25.3846 10.3846 25.3846H3.46154C1.55048 25.3846 0 23.8341 0 21.9231V9.23077C0 4.14664 4.14663 0 9.23077 0H10.3846C11.0156 0 11.5385 0.522837 11.5385 1.15385V3.46154C11.5385 4.09255 11.0156 4.61539 10.3846 4.61539H9.23077C6.6887 4.61539 4.61538 6.6887 4.61538 9.23077V9.80769C4.61538 10.7632 5.39062 11.5385 6.34615 11.5385H10.3846C12.2957 11.5385 13.8462 13.0889 13.8462 15ZM30 15V21.9231C30 23.8341 28.4495 25.3846 26.5385 25.3846H19.6154C17.7043 25.3846 16.1538 23.8341 16.1538 21.9231V9.23077C16.1538 4.14664 20.3005 0 25.3846 0H26.5385C27.1695 0 27.6923 0.522837 27.6923 1.15385V3.46154C27.6923 4.09255 27.1695 4.61539 26.5385 4.61539H25.3846C22.8425 4.61539 20.7692 6.6887 20.7692 9.23077V9.80769C20.7692 10.7632 21.5445 11.5385 22.5 11.5385H26.5385C28.4495 11.5385 30 13.0889 30 15Z"
+                      fill="#FF7759"
+                    />
+                  </svg>
+                  <p>
+                    Browniesnya enak kak. Berasa banget cokelatnya, tapi manisnya pas. Ada sedikit rasa pahit
+                    dari cokelatnya. Tekstur luarnya garing dalemnya lembut banget.
+                  </p>
+                  <h3>- Hemalina</h3>
+                </div>
+              </div>
+            </div>
+            <div class="testimony__carousel-item">
+              <div class="testimony__card">
+                <svg
+                  class="testimony__avatar"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                >
+                  <path
+                    d="M60 30C60 46.5686 46.5686 60 30 60C13.4314 60 0 46.5686 0 30C0 13.4314 13.4314 0 30 0C46.5686 0 60 13.4314 60 30Z"
+                    fill="#1575E5"
+                  />
+                  <path
+                    d="M10.5 30C10.5 19.2305 19.2305 10.5 30 10.5C40.7696 10.5 49.5 19.2305 49.5 30V43.2273C49.5 44.2063 48.7064 45 47.7273 45C45.5274 45 43.421 44.5992 41.4773 43.8669C40.1918 44.932 38.7557 45.8219 37.2057 46.4997C41.1636 48.2304 44.379 51.3434 46.2416 55.2284C41.5607 58.2477 35.9856 60 30.0012 60C24.0166 60 18.4416 58.2477 13.7607 55.2284C15.6231 51.3437 18.8381 48.231 22.7955 46.5003C21.2451 45.8223 19.8085 44.9323 18.5227 43.8669C16.579 44.5992 14.4726 45 12.2727 45C11.2936 45 10.5 44.2063 10.5 43.2273V30Z"
+                    fill="#A6CFFF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25.5 34.5C26.3284 34.5 27 35.1716 27 36C27 37.6569 28.3431 39 30 39C31.6569 39 33 37.6569 33 36C33 35.1716 33.6716 34.5 34.5 34.5C35.3284 34.5 36 35.1716 36 36C36 39.3137 33.3137 42 30 42C26.6863 42 24 39.3137 24 36C24 35.1716 24.6716 34.5 25.5 34.5Z"
+                    fill="#1575E5"
+                  />
+                  <path
+                    d="M24 26.25C24 27.4926 22.9926 28.5 21.75 28.5C20.5074 28.5 19.5 27.4926 19.5 26.25C19.5 25.0074 20.5074 24 21.75 24C22.9926 24 24 25.0074 24 26.25Z"
+                    fill="#1575E5"
+                  />
+                  <path
+                    d="M40.5 26.25C40.5 27.4926 39.4926 28.5 38.25 28.5C37.0074 28.5 36 27.4926 36 26.25C36 25.0074 37.0074 24 38.25 24C39.4926 24 40.5 25.0074 40.5 26.25Z"
+                    fill="#1575E5"
+                  />
+                </svg>
+                <div class="testimony__content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="26"
+                    viewBox="0 0 30 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.8462 15V21.9231C13.8462 23.8341 12.2957 25.3846 10.3846 25.3846H3.46154C1.55048 25.3846 0 23.8341 0 21.9231V9.23077C0 4.14664 4.14663 0 9.23077 0H10.3846C11.0156 0 11.5385 0.522837 11.5385 1.15385V3.46154C11.5385 4.09255 11.0156 4.61539 10.3846 4.61539H9.23077C6.6887 4.61539 4.61538 6.6887 4.61538 9.23077V9.80769C4.61538 10.7632 5.39062 11.5385 6.34615 11.5385H10.3846C12.2957 11.5385 13.8462 13.0889 13.8462 15ZM30 15V21.9231C30 23.8341 28.4495 25.3846 26.5385 25.3846H19.6154C17.7043 25.3846 16.1538 23.8341 16.1538 21.9231V9.23077C16.1538 4.14664 20.3005 0 25.3846 0H26.5385C27.1695 0 27.6923 0.522837 27.6923 1.15385V3.46154C27.6923 4.09255 27.1695 4.61539 26.5385 4.61539H25.3846C22.8425 4.61539 20.7692 6.6887 20.7692 9.23077V9.80769C20.7692 10.7632 21.5445 11.5385 22.5 11.5385H26.5385C28.4495 11.5385 30 13.0889 30 15Z"
+                      fill="#FF7759"
+                    />
+                  </svg>
+                  <p>
+                    Nastarnya enak sekali, kak. Selainya lumer di mulut. Perpaduan rasa gurih, manis, dan asem
+                    dari selainya pas banget.
+                  </p>
+                  <h3>- Tias</h3>
+                </div>
+              </div>
+            </div>
+            <div class="testimony__carousel-item">
+              <div class="testimony__card">
+                <svg
+                  class="testimony__avatar"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                >
+                  <path
+                    d="M60 30C60 46.5686 46.5686 60 30 60C13.4314 60 0 46.5686 0 30C0 13.4314 13.4314 0 30 0C46.5686 0 60 13.4314 60 30Z"
+                    fill="#1575E5"
+                  />
+                  <path
+                    d="M10.5 30C10.5 19.2305 19.2305 10.5 30 10.5C40.7696 10.5 49.5 19.2305 49.5 30V43.2273C49.5 44.2063 48.7064 45 47.7273 45C45.5274 45 43.421 44.5992 41.4773 43.8669C40.1918 44.932 38.7557 45.8219 37.2057 46.4997C41.1636 48.2304 44.379 51.3434 46.2416 55.2284C41.5607 58.2477 35.9856 60 30.0012 60C24.0166 60 18.4416 58.2477 13.7607 55.2284C15.6231 51.3437 18.8381 48.231 22.7955 46.5003C21.2451 45.8223 19.8085 44.9323 18.5227 43.8669C16.579 44.5992 14.4726 45 12.2727 45C11.2936 45 10.5 44.2063 10.5 43.2273V30Z"
+                    fill="#A6CFFF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25.5 34.5C26.3284 34.5 27 35.1716 27 36C27 37.6569 28.3431 39 30 39C31.6569 39 33 37.6569 33 36C33 35.1716 33.6716 34.5 34.5 34.5C35.3284 34.5 36 35.1716 36 36C36 39.3137 33.3137 42 30 42C26.6863 42 24 39.3137 24 36C24 35.1716 24.6716 34.5 25.5 34.5Z"
+                    fill="#1575E5"
+                  />
+                  <path
+                    d="M24 26.25C24 27.4926 22.9926 28.5 21.75 28.5C20.5074 28.5 19.5 27.4926 19.5 26.25C19.5 25.0074 20.5074 24 21.75 24C22.9926 24 24 25.0074 24 26.25Z"
+                    fill="#1575E5"
+                  />
+                  <path
+                    d="M40.5 26.25C40.5 27.4926 39.4926 28.5 38.25 28.5C37.0074 28.5 36 27.4926 36 26.25C36 25.0074 37.0074 24 38.25 24C39.4926 24 40.5 25.0074 40.5 26.25Z"
+                    fill="#1575E5"
+                  />
+                </svg>
+                <div class="testimony__content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="26"
+                    viewBox="0 0 30 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.8462 15V21.9231C13.8462 23.8341 12.2957 25.3846 10.3846 25.3846H3.46154C1.55048 25.3846 0 23.8341 0 21.9231V9.23077C0 4.14664 4.14663 0 9.23077 0H10.3846C11.0156 0 11.5385 0.522837 11.5385 1.15385V3.46154C11.5385 4.09255 11.0156 4.61539 10.3846 4.61539H9.23077C6.6887 4.61539 4.61538 6.6887 4.61538 9.23077V9.80769C4.61538 10.7632 5.39062 11.5385 6.34615 11.5385H10.3846C12.2957 11.5385 13.8462 13.0889 13.8462 15ZM30 15V21.9231C30 23.8341 28.4495 25.3846 26.5385 25.3846H19.6154C17.7043 25.3846 16.1538 23.8341 16.1538 21.9231V9.23077C16.1538 4.14664 20.3005 0 25.3846 0H26.5385C27.1695 0 27.6923 0.522837 27.6923 1.15385V3.46154C27.6923 4.09255 27.1695 4.61539 26.5385 4.61539H25.3846C22.8425 4.61539 20.7692 6.6887 20.7692 9.23077V9.80769C20.7692 10.7632 21.5445 11.5385 22.5 11.5385H26.5385C28.4495 11.5385 30 13.0889 30 15Z"
+                      fill="#FF7759"
+                    />
+                  </svg>
+                  <p>
+                    Enakk bangett. Apalagi brownies keringnyaaa. Luarnya crispy tapi dalemnya lembut banget
+                    😍😍
+                  </p>
+                  <h3>- Nisa</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="testimony__carousel-nav nav-right" onclick="nextSlide()">
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
         </div>
       </div>
 
@@ -532,75 +740,83 @@
         </div>
       </div>
 
-      <div class="location container">
-        <div class="location__content">
-          <h1 style="color: #5f2929">Our Location</h1>
-          <div class="scroll-animate">
-            <svg
-              style="flex-shrink: 0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="36"
-              viewBox="0 0 40 36"
-              fill="none"
-            >
-              <path
-                d="M38.5387 3.47L26.1333 0L13.6917 3.50467L2.12158 0.2225C1.87366 0.152157 1.6128 0.140267 1.3595 0.187764C1.1062 0.235261 0.867368 0.34085 0.661768 0.496235C0.456169 0.65162 0.289404 0.852566 0.174578 1.08328C0.0597523 1.314 -5.6124e-06 1.5682 3.95353e-10 1.82592V30.2092C0.00126054 30.6442 0.143723 31.0669 0.405956 31.4139C0.668189 31.7609 1.03601 32.0134 1.45408 32.1333L13.6888 35.6042L26.1359 32.098L37.8845 35.3843C38.1322 35.4536 38.3926 35.4646 38.6453 35.4165C38.8979 35.3683 39.136 35.2624 39.3409 35.1069C39.5458 34.9514 39.7119 34.7506 39.8262 34.5202C39.9406 34.2898 40.0001 34.036 40 33.7788V5.39608C39.9989 4.95984 39.8557 4.53583 39.592 4.18828C39.3283 3.84073 38.9586 3.58857 38.5387 3.47ZM12.25 32.4237L2.66667 29.705V3.149L12.25 5.86767V32.4237ZM24.8013 29.7031L14.9167 32.4874V5.93L24.8013 3.14567V29.7031ZM37.3333 32.4607L27.4679 29.7015V3.14225L37.3333 5.9015V32.4607Z"
-                fill="#803C2D"
-              />
-            </svg>
-            <div>
-              <h4>Lokasi</h4>
-              <p>Pasar Limpung, Kecamatan Limpung, Kabupaten Batang, Jawa Tengah, Indonesia</p>
+      <div class="location-section">
+        <div class="location container">
+          <div class="location__content">
+            <h1 style="color: #5f2929">Our Location</h1>
+            <div class="scroll-animate">
+              <svg
+                style="flex-shrink: 0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="36"
+                viewBox="0 0 40 36"
+                fill="none"
+              >
+                <path
+                  d="M38.5387 3.47L26.1333 0L13.6917 3.50467L2.12158 0.2225C1.87366 0.152157 1.6128 0.140267 1.3595 0.187764C1.1062 0.235261 0.867368 0.34085 0.661768 0.496235C0.456169 0.65162 0.289404 0.852566 0.174578 1.08328C0.0597523 1.314 -5.6124e-06 1.5682 3.95353e-10 1.82592V30.2092C0.00126054 30.6442 0.143723 31.0669 0.405956 31.4139C0.668189 31.7609 1.03601 32.0134 1.45408 32.1333L13.6888 35.6042L26.1359 32.098L37.8845 35.3843C38.1322 35.4536 38.3926 35.4646 38.6453 35.4165C38.8979 35.3683 39.136 35.2624 39.3409 35.1069C39.5458 34.9514 39.7119 34.7506 39.8262 34.5202C39.9406 34.2898 40.0001 34.036 40 33.7788V5.39608C39.9989 4.95984 39.8557 4.53583 39.592 4.18828C39.3283 3.84073 38.9586 3.58857 38.5387 3.47ZM12.25 32.4237L2.66667 29.705V3.149L12.25 5.86767V32.4237ZM24.8013 29.7031L14.9167 32.4874V5.93L24.8013 3.14567V29.7031ZM37.3333 32.4607L27.4679 29.7015V3.14225L37.3333 5.9015V32.4607Z"
+                  fill="#803C2D"
+                />
+              </svg>
+              <div>
+                <h4>Lokasi</h4>
+                <p>Pasar Limpung, Kecamatan Limpung, Kabupaten Batang, Jawa Tengah, Indonesia</p>
+              </div>
+            </div>
+
+            <div class="scroll-animate">
+              <svg
+                style="flex-shrink: 0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M34.0089 5.8125C30.2679 2.0625 25.2857 0 19.9911 0C9.0625 0 0.169643 8.89286 0.169643 19.8214C0.169643 23.3125 1.08036 26.7232 2.8125 29.7321L0 40L10.5089 37.2411C13.4018 38.8214 16.6607 39.6518 19.9821 39.6518H19.9911C30.9107 39.6518 40 30.7589 40 19.8304C40 14.5357 37.75 9.5625 34.0089 5.8125ZM19.9911 36.3125C17.0268 36.3125 14.125 35.5179 11.5982 34.0179L11 33.6607L4.76786 35.2946L6.42857 29.2143L6.03571 28.5893C4.38393 25.9643 3.51786 22.9375 3.51786 19.8214C3.51786 10.7411 10.9107 3.34821 20 3.34821C24.4018 3.34821 28.5357 5.0625 31.6429 8.17857C34.75 11.2946 36.6607 15.4286 36.6518 19.8304C36.6518 28.9196 29.0714 36.3125 19.9911 36.3125ZM29.0268 23.9732C28.5357 23.7232 26.0982 22.5268 25.6429 22.3661C25.1875 22.1964 24.8571 22.1161 24.5268 22.6161C24.1964 23.1161 23.25 24.2232 22.9554 24.5625C22.6696 24.8929 22.375 24.9375 21.8839 24.6875C18.9732 23.2321 17.0625 22.0893 15.1429 18.7946C14.6339 17.9196 15.6518 17.9821 16.5982 16.0893C16.7589 15.7589 16.6786 15.4732 16.5536 15.2232C16.4286 14.9732 15.4375 12.5357 15.0268 11.5446C14.625 10.5804 14.2143 10.7143 13.9107 10.6964C13.625 10.6786 13.2946 10.6786 12.9643 10.6786C12.6339 10.6786 12.0982 10.8036 11.6429 11.2946C11.1875 11.7946 9.91071 12.9911 9.91071 15.4286C9.91071 17.8661 11.6875 20.2232 11.9286 20.5536C12.1786 20.8839 15.4196 25.8839 20.3929 28.0357C23.5357 29.3929 24.7679 29.5089 26.3393 29.2768C27.2946 29.1339 29.2679 28.0804 29.6786 26.9196C30.0893 25.7589 30.0893 24.7679 29.9643 24.5625C29.8482 24.3393 29.5179 24.2143 29.0268 23.9732Z"
+                  fill="#803C2D"
+                />
+              </svg>
+              <div>
+                <h4>Whatsapp</h4>
+                <p>+62 8123-4567-789</p>
+              </div>
             </div>
           </div>
 
-          <div class="scroll-animate">
+          <div class="location__map">
+            <div style="width: 100%">
+              <iframe
+                class="scroll-animate"
+                width="100%"
+                height="450"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=450&amp;hl=en&amp;q=Pasar%20Limpung+()&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ><a href="https://www.maps.ie/population/">Find Population on Map</a></iframe
+              >
+            </div>
+          </div>
+
+          <div class="blob-shape blob4">
             <svg
-              style="flex-shrink: 0"
               xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
+              width="523"
+              height="635"
+              viewBox="0 0 523 635"
               fill="none"
             >
               <path
-                d="M34.0089 5.8125C30.2679 2.0625 25.2857 0 19.9911 0C9.0625 0 0.169643 8.89286 0.169643 19.8214C0.169643 23.3125 1.08036 26.7232 2.8125 29.7321L0 40L10.5089 37.2411C13.4018 38.8214 16.6607 39.6518 19.9821 39.6518H19.9911C30.9107 39.6518 40 30.7589 40 19.8304C40 14.5357 37.75 9.5625 34.0089 5.8125ZM19.9911 36.3125C17.0268 36.3125 14.125 35.5179 11.5982 34.0179L11 33.6607L4.76786 35.2946L6.42857 29.2143L6.03571 28.5893C4.38393 25.9643 3.51786 22.9375 3.51786 19.8214C3.51786 10.7411 10.9107 3.34821 20 3.34821C24.4018 3.34821 28.5357 5.0625 31.6429 8.17857C34.75 11.2946 36.6607 15.4286 36.6518 19.8304C36.6518 28.9196 29.0714 36.3125 19.9911 36.3125ZM29.0268 23.9732C28.5357 23.7232 26.0982 22.5268 25.6429 22.3661C25.1875 22.1964 24.8571 22.1161 24.5268 22.6161C24.1964 23.1161 23.25 24.2232 22.9554 24.5625C22.6696 24.8929 22.375 24.9375 21.8839 24.6875C18.9732 23.2321 17.0625 22.0893 15.1429 18.7946C14.6339 17.9196 15.6518 17.9821 16.5982 16.0893C16.7589 15.7589 16.6786 15.4732 16.5536 15.2232C16.4286 14.9732 15.4375 12.5357 15.0268 11.5446C14.625 10.5804 14.2143 10.7143 13.9107 10.6964C13.625 10.6786 13.2946 10.6786 12.9643 10.6786C12.6339 10.6786 12.0982 10.8036 11.6429 11.2946C11.1875 11.7946 9.91071 12.9911 9.91071 15.4286C9.91071 17.8661 11.6875 20.2232 11.9286 20.5536C12.1786 20.8839 15.4196 25.8839 20.3929 28.0357C23.5357 29.3929 24.7679 29.5089 26.3393 29.2768C27.2946 29.1339 29.2679 28.0804 29.6786 26.9196C30.0893 25.7589 30.0893 24.7679 29.9643 24.5625C29.8482 24.3393 29.5179 24.2143 29.0268 23.9732Z"
-                fill="#803C2D"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M170.571 4.14034C248.102 19.7721 271.947 113.781 330.231 167.245C394.037 225.774 519.142 240.383 522.435 326.905C525.716 413.078 407.836 442.495 342.868 499.202C285.753 549.055 246.046 626.892 170.571 634.027C91.0377 641.546 21.6492 588.651 -37.7051 535.181C-101.278 477.91 -164.253 412.253 -170.346 326.905C-176.774 236.86 -135.284 148.669 -69.7293 86.6047C-5.79973 26.0791 84.2713 -13.2594 170.571 4.14034Z"
+                fill="#FFE9C8"
               />
             </svg>
-            <div>
-              <h4>Whatsapp</h4>
-              <p>+62 8123-4567-789</p>
-            </div>
           </div>
-        </div>
-
-        <div class="location__map">
-          <div style="width: 100%">
-            <iframe
-              class="scroll-animate"
-              width="100%"
-              height="450"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              src="https://maps.google.com/maps?width=100%25&amp;height=450&amp;hl=en&amp;q=Pasar%20Limpung+()&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              ><a href="https://www.maps.ie/population/">Find Population on Map</a></iframe
-            >
-          </div>
-        </div>
-
-        <div class="blob-shape blob4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="523" height="635" viewBox="0 0 523 635" fill="none">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M170.571 4.14034C248.102 19.7721 271.947 113.781 330.231 167.245C394.037 225.774 519.142 240.383 522.435 326.905C525.716 413.078 407.836 442.495 342.868 499.202C285.753 549.055 246.046 626.892 170.571 634.027C91.0377 641.546 21.6492 588.651 -37.7051 535.181C-101.278 477.91 -164.253 412.253 -170.346 326.905C-176.774 236.86 -135.284 148.669 -69.7293 86.6047C-5.79973 26.0791 84.2713 -13.2594 170.571 4.14034Z"
-              fill="#FFE9C8"
-            />
-          </svg>
         </div>
       </div>
     </main>
@@ -639,6 +855,12 @@
       <div class="footer__copyright">©2023 Reserved by Titto Mahogany | Powered By Gamelab.id</div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="./main.js"></script>
   </body>
 </html>
